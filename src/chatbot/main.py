@@ -21,17 +21,18 @@ if __name__ == "__main__":
     tokenizer = "sentence-transformers/bert-base-nli-mean-tokens"
     model = "sentence-transformers/bert-base-nli-mean-tokens"
     
-    embedder = TextEmbedder(tokenizer, model)
-    answer_embeddings = embedder.create_sentence_embeddings(answers)
-    question_embeddings = embedder.create_sentence_embeddings(questions)
-    print(type(question_embeddings))
-    print(type(answer_embeddings))
+    # embedder = TextEmbedder(tokenizer, model)
+    # answer_embeddings = embedder.create_sentence_embeddings(answers)
+    # question_embeddings = embedder.create_sentence_embeddings(questions)
+    # print(type(question_embeddings))
+    # print(type(answer_embeddings))
 
-    # chatbot = ChatBot(tokenizer, model)
+    chatbot = ChatBot(tokenizer, model)
+    chatbot.init_embeddings(questions, answers)
 
-    # query = "How are you today Ryan?"
+    query = "How are you today Ryan?"
 
-    # query_embedding = chatbot.textembedder.create_sentence_embeddings(query)
+    query_embedding = chatbot.textembedder.create_sentence_embeddings(query)
 
-    # response = chatbot.answer_query(query_embedding)
-    # print(response)
+    response = chatbot.answer_query(query_embedding)
+    print(response)
