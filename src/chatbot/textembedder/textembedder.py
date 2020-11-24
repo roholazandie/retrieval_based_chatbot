@@ -26,7 +26,6 @@ class TextEmbedder:
         #Perform pooling. In this case, mean pooling
         return self.__mean_pooling(model_output, encoded_input['attention_mask'])
 
-
     """Private Methods"""
     def __create_encoding(self, document):
         """

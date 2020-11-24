@@ -1,4 +1,5 @@
 import torch
+import pickle
 import numpy as np
 # from sklearn.preprocessing import normalize
 from textembedder.textembedder import TextEmbedder
@@ -17,6 +18,18 @@ class ChatBot:
         self._answer_embeddings = self._textembedder.create_sentence_embeddings(answers)
         self._question_embeddings = self._textembedder.create_sentence_embeddings(questions)
 
+    def pickle_embeddings(self, question_sentences, answer_sentences, filepath="../pickled_embeddings/qa_sentences_embeddings.pkl"):
+        try:
+            print("Storing file on disc...")
+            with open(filepath, "wb") as fOut:
+                pickle.dump({'question_sentences': question_sentences, 
+                        'answer_sentences': answer_sentences, 
+                        'question_embeddings': self._question_embeddings, 
+                        'answer_embeddings': self._answer_embeddings}, fOut)
+            print("Completed pickling embeddings to disk...")
+        except Exception as e:
+            print("Error pickling embeddings! - {}".format(e))
+
     def answer_query(self, query_embedding):
         # Get similarity of query vs precomputed question embeddings
         canidate_response_idxs = self.__compute_similarity(query_embedding)
@@ -26,7 +39,7 @@ class ChatBot:
 
         best_answer_index = np.argmax(canidate_response_idxs, axis=1)
         best_answers = self._answer_embeddings[best_answer_index]
-        return best_answers
+        return best_answers, best_answer_index
 
     def __compute_similarity(self, query_embedding):
         try:
