@@ -27,7 +27,7 @@ if __name__ == "__main__":
     chatbot.init_embeddings(questions, answers)
     chatbot.pickle_embeddings(questions, answers)
 
-    queries = ["What is your name?", "How are you today Ryan?", "What should we talk about?", "Can you tell me a joke?", "Let's talk about television."]
+    queries = ["What is your name?", "How are you today Ryan?", "You just said that.", "Can you tell me a joke?", "Let's talk about television."]
     for query in queries:
         query_embedding = chatbot.textembedder.create_sentence_embeddings(query)
         response_embeddings, response_indexes = chatbot.answer_query(query_embedding)

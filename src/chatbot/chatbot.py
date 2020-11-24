@@ -35,7 +35,7 @@ class ChatBot:
         canidate_response_idxs = self.__compute_similarity(query_embedding)
         if canidate_response_idxs is None:
             raise Exception
-        # print("similarity matrix:\n{}".format(canidate_response_idxs))
+        # print("similarity matrix {}:\n{}".format(canidate_response_idxs.size(), canidate_response_idxs))
 
         best_answer_index = np.argmax(canidate_response_idxs, axis=1)
         best_answers = self._answer_embeddings[best_answer_index]
