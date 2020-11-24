@@ -129,7 +129,6 @@ models
 
 
 .idea/
-# data/*
 output/*
 proc_data
 
