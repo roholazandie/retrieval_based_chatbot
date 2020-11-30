@@ -84,36 +84,47 @@ class AIMLToCSVGenerator(object):
                 return True
         return False
 
-    def clean_tags(string, column=None):
-        first_pass = re.sub(r'[\n\t\r+]', '', string)
-        second_pass = re.sub(r'\s+', ' ', first_pass)
-        if column == "template":
-            think_removed = re.sub(r'<think>.*</think>', '', second_pass)
-            robot_removed = re.sub(r'<oob>.*</oob>', '', think_removed)
-            set_removed = re.sub(r'<set name=.*">', '', robot_removed) 
-            set_removed = re.sub(r'</set>', '', set_removed)
-            wildcardremoved = re.sub(r'\*', '[MASK]', set_removed)
-            wildcardremoved = re.sub(r'\^', '[MASK]', wildcardremoved)
-            wildcardremoved = re.sub(r'\_', '[MASK]', wildcardremoved)
-            wildcardremoved = re.sub(r'\#', '[MASK]', wildcardremoved)
-            wildcardremoved = re.sub(r'<star />', '[MASK]', wildcardremoved)
-            wildcardremoved = re.sub(r'<star index=\".*\"\s*\/>', '[MASK]', wildcardremoved)
-            wildcardremoved = re.sub(r'<that index=\".*\"\s*\/>', '[MASK]', wildcardremoved)
-            wildcardremoved = re.sub(r'<input index=\".*\"\s*\/>', '[MASK]', wildcardremoved)
-            wildcardremoved = re.sub(r'<person index=\".*\"\s*\/>', '[MASK]', wildcardremoved)
-            wildcardremoved = re.sub(r'<get name=\".*\"\s*\/>', '[MASK]', wildcardremoved)
-            return wildcardremoved.strip()
-        elif column == "pattern":
-            yes_set_removed = re.sub(r'\# <set>YES<\/set> \^', "YES", second_pass)
-            no_set_removed = re.sub(r'\# <set>NO<\/set> \^', "NO", yes_set_removed)
-            dont_set_removed = re.sub(r'\# <set>DON T KNOW<\/set> \^', "DON T KNOW", no_set_removed)
-            wildcardremoved = re.sub(r'\*', '[MASK]', dont_set_removed)
-            wildcardremoved = re.sub(r'\^', '[MASK]', wildcardremoved)
-            wildcardremoved = re.sub(r'\_', '[MASK]', wildcardremoved)
-            wildcardremoved = re.sub(r'\#', '[MASK]', wildcardremoved)
-            return wildcardremoved.strip()
-        else:
-            return second_pass.strip()
+    def clean_tags(self, string, column=None):
+        try:
+            # print("type being cleaned: {}".format(type(string)))
+            first_pass = re.sub(r'[\n\t\r+]', '', string)
+            second_pass = re.sub(r'\s+', ' ', first_pass)
+            if column == "template":
+                think_removed = re.sub(r'<think>.*</think>', '', second_pass)
+                robot_removed = re.sub(r'<oob>.*</oob>', '', think_removed)
+                set_removed = re.sub(r'<set name=.*">', '', robot_removed) 
+                set_removed = re.sub(r'</set>', '', set_removed)
+                wildcardremoved = re.sub(r'\*', '[MASK]', set_removed)
+                wildcardremoved = re.sub(r'\^', '[MASK]', wildcardremoved)
+                wildcardremoved = re.sub(r'\_', '[MASK]', wildcardremoved)
+                wildcardremoved = re.sub(r'\#', '[MASK]', wildcardremoved)
+                wildcardremoved = re.sub(r'<star />', '[MASK]', wildcardremoved)
+                wildcardremoved = re.sub(r'<star index=\".*\"\s*\/>', '[MASK]', wildcardremoved)
+                wildcardremoved = re.sub(r'<that index=\".*\"\s*\/>', '[MASK]', wildcardremoved)
+                wildcardremoved = re.sub(r'<input index=\".*\"\s*\/>', '[MASK]', wildcardremoved)
+                wildcardremoved = re.sub(r'<person index=\".*\"\s*\/>', '[MASK]', wildcardremoved)
+                wildcardremoved = re.sub(r'<person />', '[MASK]', wildcardremoved) 
+                wildcardremoved = re.sub(r'<thatstar />', '[MASK]', wildcardremoved)
+                wildcardremoved = re.sub(r'<get name=\".*\"\s*\/>', '[MASK]', wildcardremoved)
+                wildcardremoved = re.sub(r'<bot name=\".*\"\s*\/>', '[MASK]', wildcardremoved)
+                wildcardremoved = re.sub(r'<date format=\".*\"\s*\/>', '[MASK]', wildcardremoved)
+                return wildcardremoved.strip()
+            elif column == "pattern":
+                yes_set_removed = re.sub(r'\# <set>YES<\/set> \^', "YES", second_pass)
+                no_set_removed = re.sub(r'\# <set>NO<\/set> \^', "NO", yes_set_removed)
+                dont_set_removed = re.sub(r'\# <set>DON T KNOW<\/set> \^', "DON T KNOW", no_set_removed)
+                yes_set_removed = re.sub(r'<set>YES<\/set>', "YES", second_pass)
+                no_set_removed = re.sub(r'<set>NO<\/set>', "NO", yes_set_removed)
+                dont_set_removed = re.sub(r'<set>DON T KNOW<\/set>', "DON T KNOW", no_set_removed)
+                wildcardremoved = re.sub(r'\*', '[MASK]', dont_set_removed)
+                wildcardremoved = re.sub(r'\^', '[MASK]', wildcardremoved)
+                wildcardremoved = re.sub(r'\_', '[MASK]', wildcardremoved)
+                wildcardremoved = re.sub(r'\#', '[MASK]', wildcardremoved)
+                return wildcardremoved.strip()
+            else:
+                return second_pass.strip()
+        except Exception as e:
+            print("Error cleaning tags - {}".format(e))
 
     @staticmethod
     def element_to_string(element):
@@ -171,7 +182,16 @@ if __name__ == '__main__':
         generator = AIMLToCSVGenerator()
         df = pd.read_csv(generator._input)
         df.columns =['Pattern', 'Topic', 'Topic', 'Template'] 
-        # TODO: Iterate through columns and clean the text
+        
+        df['Pattern'] = df['Pattern'].apply(lambda x: generator.clean_tags(x, 'pattern'))
+        df['Template'] = df['Template'].apply(lambda x: generator.clean_tags(x, 'template'))
+
+        df.to_csv(generator._output, index=False)
+        
+        # # TODO: Iterate through columns and clean the text
+        # for row in df.iterrows():
+        #     cleaned_pattern = generator.clean_tags(column='Pattern')
+        #     cleaned_template = generator.clean_tags(column='Template')
         
 
     clean_df()

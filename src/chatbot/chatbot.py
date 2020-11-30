@@ -8,15 +8,19 @@ class ChatBot:
     def __init__(self, tokenizer_filepath, model_filepath):
         self._textembedder = TextEmbedder(tokenizer_filepath, model_filepath)
         # self.init_embeddings()
-        print("Finished created embeddings")
+        print("Finished created model and tokenizer.")
 
     @property
     def textembedder(self):
         return self._textembedder
 
     def init_embeddings(self, questions, answers):
-        self._answer_embeddings = self._textembedder.create_sentence_embeddings(answers)
-        self._question_embeddings = self._textembedder.create_sentence_embeddings(questions)
+        try:
+            self._answer_embeddings = self._textembedder.create_sentence_embeddings(answers)
+            self._question_embeddings = self._textembedder.create_sentence_embeddings(questions)
+            print("Finished created embeddings.")
+        except Exception as e:
+            print("Error initializing question and answer embeddings - {}".format(e))
 
     def pickle_embeddings(self, question_sentences, answer_sentences, filepath="../pickled_embeddings/qa_sentences_embeddings.pkl"):
         try:

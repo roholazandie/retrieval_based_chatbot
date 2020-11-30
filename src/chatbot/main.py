@@ -5,7 +5,7 @@ from textembedder.textembedder import TextEmbedder
 from chatbot import ChatBot
 
 if __name__ == "__main__":
-    datareader = DataReader('../../data/subset_AIML_QAdataset.csv')
+    datareader = DataReader('../../data/AIML_QAdataset_with_tags.csv')
     # print(datareader.df.head())
     # print(datareader.df.info)
 
@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
     chatbot = ChatBot(tokenizer, model)
     chatbot.init_embeddings(questions, answers)
-    chatbot.pickle_embeddings(questions, answers)
+    # chatbot.pickle_embeddings(questions, answers)
 
     queries = ["What is your name?", "How are you today Ryan?", "You just said that.", "Can you tell me a joke?", "I love a good adventure book."]
     for query in queries:
