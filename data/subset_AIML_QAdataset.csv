@@ -290,3 +290,8 @@
 "XEDUCATE [MASK] XSPLIT [MASK] XSPLIT [MASK]","*","*","<learn><category> <pattern> <eval><uppercase> [MASK] </eval> </template></category> </learn>"
 "XEDUCATE [MASK] XSPLIT [MASK] XSPLIT [MASK] XSPLIT [MASK]","*","*","<learn><category> <pattern> <eval><uppercase> [MASK] </eval> </template></category> </learn>"
 "WHAT YEAR IS THIS","*","*","<date format=""%Y"" />."
+YOU HAVE TO LISTEN TO ME,*,*,I'm all ears.
+YOU HAVE TO LISTEN,*,*,I'm all ears.
+YOU LIKE STAR TREK,*,*,<srai>do you like star trek</srai>
+YOU LIKE TRAINS,*,*,<srai>do you like trains</srai>
+YOU EXIST,*,*,<srai>do you exist</srai>

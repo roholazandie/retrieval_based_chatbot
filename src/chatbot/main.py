@@ -2,10 +2,10 @@ import pickle
 
 from datareader.datareader import DataReader
 from textembedder.textembedder import TextEmbedder
-from chatbot import ChatBot
+from bot.bot import Bot
 
 if __name__ == "__main__":
-    datareader = DataReader('../../data/AIML_QAdataset_with_tags.csv')
+    datareader = DataReader('../../data/AIML_QAdataset.csv')
     # print(datareader.df.head())
     # print(datareader.df.info)
 
@@ -17,17 +17,23 @@ if __name__ == "__main__":
         for row in datareader:
             questions.append(row[0]) #= np.append(questions, row[0])
             answers.append(row[1]) #= np.append(answers, row[1])
-    except:
-        print("finished creating question/answer documents")
+    except Exception as e:
+        if e is not "single positional indexer is out-of-bounds":
+            print("finished creating question/answer documents")
+            exit()
+
+        print("Error creating file! - {}".format(e))
+        
 
     tokenizer = "sentence-transformers/bert-base-nli-mean-tokens"
     model = "sentence-transformers/bert-base-nli-mean-tokens"
 
-    chatbot = ChatBot(tokenizer, model)
+    chatbot = Bot(tokenizer, model)
     chatbot.init_embeddings(questions, answers)
     # chatbot.pickle_embeddings(questions, answers)
 
-    queries = ["What is your name?", "How are you today Ryan?", "You just said that.", "Can you tell me a joke?", "I love a good adventure book."]
+    queries = ["What is your name?", "How are you today Ryan?", "You just said that.", "Can you tell me a joke?", "I love a good adventure book.", "What year is it?"]
+    print("Asking questions...")
     for query in queries:
         query_embedding = chatbot.textembedder.create_sentence_embeddings(query)
         response_embeddings, response_indexes = chatbot.answer_query(query_embedding)

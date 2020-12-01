@@ -1,0 +1,1 @@
+This is a folder of Program-R's utils folder. Has useful tools for creating AIML from CSV and vice vercsa.

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+<category>
+	<pattern>HELLO</pattern>
+	<template>
+		Hello there
+	</template>
+</category>
+
+<category>
+        <pattern>GOOD</pattern>
+        <template>
+            <random>
+                <li>Alright then.</li>
+                <li>Thanks for the compliment.</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+</category>
+
+<category>
+        <pattern># ADVENTURE ^</pattern>
+        <that>Do you prefer adventure, horror, drama, or mystery?</that>
+        <template>
+            <think><set name="topic">adventure</set></think>
+            <think><set name="dialogue">reading</set></think>
+            <random>
+            <li>There's nothing like a good adventure to liven things up!
+            <set name="most recent dialogue question">Have you ever read The Adventures of Tom Sawyer?</set></li>
+            <li><set name="most recent dialogue question">Adventure excites me! Oh the thrill, the chase! Are you familiar with Moby Dick?</set></li>
+            </random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+</category>
+
+<category>
+	<pattern># <set>YES</set> ^</pattern>
+	<that>Have you ever read The Adventures of Tom Sawyer?</that>
+	<template>
+		<set name="most recent dialogue question">What did you think of all the mischief Tom got into?</set>
+		<oob><robot></robot></oob>
+	</template>
+</category>
+
+<category>
+	<pattern>HELLO *</pattern>
+	<template>
+		<srai>HELLO</srai>
+	</template>
+</category>
+
+<topic name="FAREWELL">
+	<category>
+		<pattern>BYE</pattern>
+		<template>
+			See ya
+		</template>
+	</category>
+</topic>
+
+<category>
+	<pattern>MAYBE</pattern>
+	<that>THINKING</that>
+	<template>
+		OK THEN
+	</template>
+</category>
+
+<topic name="SINGING">
+	<category>
+		<pattern>LA LA LA</pattern>
+		<that>SING A SONG</that>
+		<template>
+			Ouch that hurts
+		</template>
+	</category>
+</topic>
+
+</aiml>

@@ -19,12 +19,16 @@ class TextEmbedder:
         return self._model
 
     def create_sentence_embeddings(self, document):
-        #Tokenize questions
-        encoded_input = self.__create_encoding(document)
-        model_output = self.__compute_token_embedding(encoded_input)
+        try:
+            #Tokenize questions
+            encoded_input = self.__create_encoding(document)
+            # print("Created econding - {}".format(encoded_input))
+            model_output = self.__compute_token_embedding(encoded_input)
 
-        #Perform pooling. In this case, mean pooling
-        return self.__mean_pooling(model_output, encoded_input['attention_mask'])
+            #Perform pooling. In this case, mean pooling
+            return self.__mean_pooling(model_output, encoded_input['attention_mask'])
+        except Exception as e:
+            print("Error creating sentence embeddings - {}".format(e))
 
     """Private Methods"""
     def __create_encoding(self, document):

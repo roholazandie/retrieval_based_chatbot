@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern>ACTION</pattern>
+        <template><think><set name="topic">action</set></think>
+        <think><set name="dialogue">movies</set></think>Would you say you prefer Bond, James Bond or Indiana Jones?<oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>IMPRESSIVE</pattern>
+        <template>I am happy that you're impressed, <get name="name"/>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>LIVERPOOL ENGLAND</pattern>
+        <template>
+            <set name="location">Liverpool</set> is the home of the Beatles.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>LIVERPOOL ENGLAND</pattern>
+        <template>
+            <set name="location">Liverpool</set> is the home of the Beatles.  
+            <think>
+                <set name="it">
+                    <set name="topic">Liverpool</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT S YOUR NAME</pattern>
+        <template>
+            <random>
+                <li><bot name="name"/></li>
+                <li>My name is <bot name="name"/>.</li>
+                <li>I am called <bot name="name"/>.</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+      <pattern>YOU JUST SAID THAT</pattern>
+      <template>
+        <condition name="dialogue">
+            <li value="sports">My apologies! Do you want to get back to talking about sports?</li>
+            <li value="music">My apologies! Do you want to get back to talking about music?</li>
+            <li value="science">My apologies! Do you want to get back to talking about science?</li>
+            <li value="movies">My apologies! Do you want to get back to talking about movies?</li>
+            <li value="television">My apologies! Do you want to get back to talking about TV?</li>
+            <li value="museums">My apologies! Do you want to get back to talking about museums?</li>
+            <li value="food">My apologies! Do you want to get back to talking about food?</li>
+            <li value="inventions">My apologies! Do you want to get back to talking about inventions?</li>
+            <li value="reading">My apologies! Do you want to get back to talking about reading?</li>
+            <li value="books">My apologies! Do you want to get back to talking about books?</li>
+            <li value="cards">My apologies! Do you want to get back to talking about cards?</li>
+            <li value="knitting">My apologies! Do you want to get back to talking about knitting?</li>
+            <li value="travel">My apologies! Do you want to get back to talking about travel?</li>
+            <li value="kids">My apologies! Do you want to get back to talking about kids?</li>
+            <li value="pets">My apologies! Do you want to get back to talking about pets?</li>
+            <li value="Unknown">My apologies! So what should we talk about now?</li>
+        </condition>
+      <oob><robot></robot></oob>
+      </template>
+    </category>
+
+    <category>
+        <pattern>LET US TALK ABOUT YOU</pattern>
+        <template><set name="it"><set name="topic">Me</set></set> is my favorite subject.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># ADVENTURE ^</pattern>
+        <that>Do you prefer adventure, horror, drama, or mystery?</that>
+        <template>
+            <think><set name="topic">adventure</set></think>
+            There's nothing like a good adventure story to liven things up! Have you ever read The Adventures of Tom Sawyer?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ASK ME A NEW QUESTION</pattern>
+        <template><srai>ASK ME A DIFFERENT QUESTION</srai></template>
+    </category>
+
+    <topic name="music">
+        <category>
+            <pattern>_</pattern>
+            <that>Maybe we'd make a good duo! </that>
+            <template>
+                Kind of like Sonny and Cher or Captain and Tennille! <set name="most recent dialogue question">Have you ever sang karaoke before?</set>
+                <oob><robot></robot></oob>
+            </template>
+        </category>
+    </topic>
+
+    <category>
+        <pattern>YOU WILL REMEMBER WHAT</pattern>
+        <template><get name="memory"/>
+            <think>
+                <set name="it">
+                    <set name="topic">
+                        <get name="memory"/>
+                    </set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># ADVENTURE ^</pattern>
+        <that>Do you prefer adventure, horror, drama, or mystery?</that>
+        <template>
+            <think><set name="topic">adventure</set></think>
+            There's nothing like a good adventure story to liven things up! Have you ever read The Adventures of Tom Sawyer?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+</aiml>

@@ -1,0 +1,4 @@
+    *:STAR
+    #:HASH
+    ^:ARROW
+    _:UNDERLINE
