@@ -30,6 +30,8 @@ class TextEmbedder:
         except Exception as e:
             print("Error creating sentence embeddings - {}".format(e))
 
+
+
     """Private Methods"""
     def __create_encoding(self, document):
         """
