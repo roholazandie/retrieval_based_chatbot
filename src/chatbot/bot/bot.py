@@ -1,9 +1,8 @@
 import torch
 import pickle
 import numpy as np
-import torch.nn.functional as F
+import torch.nn as nn
 
-# from sklearn.preprocessing import normalize
 from textembedder.textembedder import TextEmbedder
 
 class Bot:
@@ -44,11 +43,10 @@ class Bot:
         if method is "cosine":
             canidate_response_idxs = self.__compute_cosine_similarity(query_embedding) 
         elif method is "softmax":
-            canidate_response_idxs = self.___compute_indicies_softmax(query_embedding) 
+            canidate_response_idxs = self.__compute_indicies_softmax(query_embedding) 
         
         if canidate_response_idxs is None:
             raise Exception
-        # print("similarity matrix {}:\n{}".format(canidate_response_idxs.size(), canidate_response_idxs))
 
         best_answer_index = np.argmax(canidate_response_idxs, axis=1)
         best_answers = self._answer_embeddings[best_answer_index]
@@ -60,22 +58,22 @@ class Bot:
         try:
             print("\tcomputing similarity of query...")
             
-            numerator = np.dot(query_embedding, torch.transpose(self._question_embeddings, 0, 1))
+            numerator = torch.matmul(query_embedding, torch.transpose(self._question_embeddings, 0, 1))
             print("\tcomputed numerator...")
             
-            denominator = np.dot(query_embedding, torch.transpose(self._question_embeddings, 0, 1))
+            denominator = torch.matmul(query_embedding, torch.transpose(self._question_embeddings, 0, 1))
             print("\tcomputed denominator...")
             
-            denominator = torch.tanh(torch.from_numpy(denominator))
+            denominator = torch.tanh(denominator)
             print("\tnormalized denominator...")
             return numerator / denominator
         except Exception as e:
             print("Error computing similarity - {}".format(e))
 
-    def ___compute_indicies_softmax(self, query_embedding):
+    def __compute_indicies_softmax(self, query_embedding):
         try:
-            input_tensor = np.dot(query_embedding, torch.transpose(self._question_embeddings, 0, 1))
-            canidate_response_idxs = F.softmax(torch.from_numpy(input_tensor), dim=1)
+            input_tensor = torch.matmul(query_embedding, torch.transpose(self._question_embeddings, 0, 1))
+            canidate_response_idxs = nn.Softmax(input_tensor)
             return input_tensor
         except Exception as e:
             print("Error computing indicies via softmax - {}".format(e))
