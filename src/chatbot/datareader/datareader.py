@@ -9,7 +9,7 @@ from textembedder.textembedder import TextEmbedder
 class DataReader:
     def __init__(self, filepath):
         self.df = pd.read_csv(filepath)
-        self.df.columns =['Pattern', 'Topic', 'Topic', 'Template'] 
+        self.df.columns =['Pattern', 'Topic', 'That', 'Template'] 
         self.max = len(self.df.index)
 
     def __iter__(self):
