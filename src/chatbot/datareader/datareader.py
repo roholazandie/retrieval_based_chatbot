@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd 
 import torch
+from sklearn.model_selection import train_test_split
 
 from transformers import AutoTokenizer, AutoModel
 from textembedder.textembedder import TextEmbedder
@@ -11,6 +12,16 @@ class DataReader:
         self.df = pd.read_csv(filepath)
         self.df.columns =['Pattern', 'Topic', 'That', 'Template'] 
         self.max = len(self.df.index)
+
+    def train_test_split(self):
+        # Covnert values to strings
+        self.df["Pattern"] = self.df["Pattern"].apply(str)
+        self.df["Topic"] = self.df["Topic"].apply(str)
+        self.df["That"] = self.df["That"].apply(str)
+        self.df["Template"] = self.df["Template"].apply(str)
+
+        train, test = train_test_split(self.df, stratify=self.df['Topic'])
+        return train, test
 
     def __iter__(self):
         self.index = 0

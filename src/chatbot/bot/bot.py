@@ -9,7 +9,7 @@ class Bot:
     def __init__(self, tokenizer_filepath, model_filepath):
         self._textembedder = TextEmbedder(tokenizer_filepath, model_filepath)
         # self.init_embeddings()
-        print("Finished created model and tokenizer.")
+        print("Finished creating model and tokenizer.")
 
     @property
     def textembedder(self):
@@ -17,6 +17,8 @@ class Bot:
 
     def init_embeddings(self, questions, answers):
         try:
+            self._answer_arrs = answers
+            self._question_arrs = questions
             self._answer_embeddings = self._textembedder.create_sentence_embeddings(answers)
             self._question_embeddings = self._textembedder.create_sentence_embeddings(questions)
             print("Finished created embeddings.")
@@ -38,7 +40,7 @@ class Bot:
         except Exception as e:
             print("Error pickling embeddings! - {}".format(e))
 
-    def answer_query(self, query_embedding, method="cosine"):
+    def find_embeddings(self, query_embedding, method="cosine"):
         # Get similarity of query vs precomputed question embeddings
         if method is "cosine":
             canidate_response_idxs = self.__compute_cosine_similarity(query_embedding) 
@@ -52,6 +54,10 @@ class Bot:
         best_answers = self._answer_embeddings[best_answer_index]
         return best_answers, best_answer_index
 
+    def answer_query(self, query):
+        query_embedding = self.textembedder.create_sentence_embeddings(query)
+        response_embeddings, response_indexes = self.find_embeddings(query_embedding, "softmax")
+        return self._answer_arrs[response_indexes[0]]
 
     """Private Methods"""
     def __compute_cosine_similarity(self, query_embedding):
@@ -69,6 +75,7 @@ class Bot:
             return numerator / denominator
         except Exception as e:
             print("Error computing similarity - {}".format(e))
+            raise Exception
 
     def __compute_indicies_softmax(self, query_embedding):
         try:
