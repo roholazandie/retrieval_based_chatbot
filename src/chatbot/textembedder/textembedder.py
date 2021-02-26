@@ -30,6 +30,7 @@ class TextEmbedder:
             
             if torch.cuda.is_available():
                 # encoded_input = encoded_input.to('cuda')
+                print("Cuda available")
                 model_output[0] = model_output[0].to('cuda')
                 model_output[1] = model_output[1].to('cuda')
 
