@@ -24,12 +24,14 @@ class TextEmbedder:
             encoded_input = self.__create_encoding(document)
             # print("Created econding - {}".format(encoded_input))
             model_output = self.__compute_token_embedding(encoded_input)
+            
+            if torch.cuda.is_available():
+                encoded_input = encoded_input.to('cuda')
 
             #Perform pooling. In this case, mean pooling
             return self.__mean_pooling(model_output, encoded_input['attention_mask'])
         except Exception as e:
             print("Error creating sentence embeddings - {}".format(e))
-
 
 
     """Private Methods"""

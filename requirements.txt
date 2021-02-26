@@ -3,3 +3,4 @@ pandas
 scikit-learn
 transformers==3.0.2
 torch==1.5.1
+sentence-transformers
