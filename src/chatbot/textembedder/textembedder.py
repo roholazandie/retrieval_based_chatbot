@@ -10,8 +10,8 @@ class TextEmbedder:
         self._tokenizer = AutoTokenizer.from_pretrained(tokenizer_filepath)
         self._model = AutoModel.from_pretrained(model_filepath)
         if torch.cuda.is_available():
-            print("Cuda is available, putting the pretrained model and tokenizer on the GPU.")
-            self._tokenizer.to('cuda')
+            print("Cuda is available, putting the pretrained model on the GPU.")
+            # self._tokenizer.to('cuda')
             self._model.to('cuda')
 
 
@@ -28,6 +28,9 @@ class TextEmbedder:
             #Tokenize questions
             encoded_input = self.__create_encoding(document)
             print("Encoded input - {}".format(type(encoded_input)))
+
+            if torch.cuda.is_available():
+                encoded_input = encoded_input.to('cuda')
 
             model_output = self.__compute_token_embedding(encoded_input)
             # print("Model output - {}".format(type(model_output)))
