@@ -60,8 +60,11 @@ class Bot:
         if canidate_response_idxs is None:
             raise Exception
 
-        best_answer_index = np.argmax(canidate_response_idxs, axis=1)
-        best_answers = self._answer_embeddings[best_answer_index]
+        try:
+            best_answer_index = np.argmax(canidate_response_idxs.cpu(), axis=1)
+            best_answers = self._answer_embeddings[best_answer_index]
+        except Exception as e:
+            print("Error finding embeddings - {}".format(e))
         return best_answers, best_answer_index
 
 
@@ -86,9 +89,9 @@ class Bot:
     def __compute_indicies_softmax(self, query_embedding):
         try:
             input_tensor = torch.matmul(query_embedding, torch.transpose(self._question_embeddings, 0, 1))
-            print("input_tensor: {}".format(type(input_tensor)))
+            # print("input_tensor: {}".format(type(input_tensor)))
             canidate_response_idxs = nn.Softmax(input_tensor)
-            print("tensor went through softmax layer.")
+            # print("tensor went through softmax layer.")
             return input_tensor
         except Exception as e:
             print("Error computing indicies via softmax - {}".format(e))
