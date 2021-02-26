@@ -55,9 +55,12 @@ class Bot:
         return best_answers, best_answer_index
 
     def answer_query(self, query):
-        query_embedding = self.textembedder.create_sentence_embeddings(query)
-        response_embeddings, response_indexes = self.find_embeddings(query_embedding, "softmax")
-        return self._answer_arrs[response_indexes[0]]
+        try:
+            query_embedding = self.textembedder.create_sentence_embeddings(query)
+            response_embeddings, response_indexes = self.find_embeddings(query_embedding, "softmax")
+            return self._answer_arrs[response_indexes[0]]
+        except Exception as e:
+            print("Error getting answer query - {}".format(e))
 
     """Private Methods"""
     def __compute_cosine_similarity(self, query_embedding):
