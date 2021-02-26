@@ -9,6 +9,10 @@ class TextEmbedder:
     def __init__(self, tokenizer_filepath, model_filepath):
         self._tokenizer = AutoTokenizer.from_pretrained(tokenizer_filepath)
         self._model = AutoModel.from_pretrained(model_filepath)
+        print("Created model: {}".format(type(self._model)))
+        if torch.cuda.is_available():
+            print("Cuda is available, putting the pretrained model on the GPU.")
+            self._model.to('cuda')
 
     @property
     def tokenizer(self):
@@ -22,17 +26,17 @@ class TextEmbedder:
         try:
             #Tokenize questions
             encoded_input = self.__create_encoding(document)
-            print("Encoded input - {}".format(type(encoded_input)))
+            # print("Encoded input - {}".format(type(encoded_input)))
             model_output = self.__compute_token_embedding(encoded_input)
-            print("Model output - {}".format(type(model_output)))
-            print("Model output 1- {}".format(type(model_output[0])))
-            print("Model output 2 - {}".format(type(model_output[1])))
+            # print("Model output - {}".format(type(model_output)))
+            # print("Model output 1- {}".format(type(model_output[0])))
+            # print("Model output 2 - {}".format(type(model_output[1])))
             
-            if torch.cuda.is_available():
-                # encoded_input = encoded_input.to('cuda')
-                print("Cuda available")
-                model_output[0] = model_output[0].to('cuda')
-                model_output[1] = model_output[1].to('cuda')
+            # if torch.cuda.is_available():
+            #     # encoded_input = encoded_input.to('cuda')
+            #     print("Cuda available")
+            #     model_output[0] = model_output[0].to('cuda')
+            #     model_output[1] = model_output[1].to('cuda')
 
             #Perform pooling. In this case, mean pooling
             return self.__mean_pooling(model_output, encoded_input['attention_mask'])
