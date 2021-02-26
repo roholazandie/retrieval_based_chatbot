@@ -22,11 +22,16 @@ class TextEmbedder:
         try:
             #Tokenize questions
             encoded_input = self.__create_encoding(document)
-            # print("Created econding - {}".format(encoded_input))
+            print("Encoded input - {}".format(type(encoded_input)))
             model_output = self.__compute_token_embedding(encoded_input)
+            print("Model output - {}".format(type(model_output)))
+            print("Model output 1- {}".format(type(model_output[0])))
+            print("Model output 2 - {}".format(type(model_output[1])))
             
             if torch.cuda.is_available():
-                encoded_input = encoded_input.to('cuda')
+                # encoded_input = encoded_input.to('cuda')
+                model_output[0] = model_output[0].to('cuda')
+                model_output[1] = model_output[1].to('cuda')
 
             #Perform pooling. In this case, mean pooling
             return self.__mean_pooling(model_output, encoded_input['attention_mask'])
