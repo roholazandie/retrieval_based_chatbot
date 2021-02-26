@@ -28,6 +28,14 @@ class Bot:
             print("answers input: {}".format(type(answers)))
             raise Exception
 
+    def answer_query(self, query):
+        try:
+            query_embedding = self.textembedder.create_sentence_embeddings(query)
+            response_embeddings, response_indexes = self.find_embeddings(query_embedding, "softmax")
+            return self._answer_arrs[response_indexes[0]]
+        except Exception as e:
+            print("Error getting answer query - {}".format(e))
+
     def pickle_embeddings(self, question_sentences, answer_sentences, filepath="../pickled_embeddings/qa_sentences_embeddings.pkl"):
         try:
             print("Storing file on disc...")
@@ -43,8 +51,10 @@ class Bot:
     def find_embeddings(self, query_embedding, method="cosine"):
         # Get similarity of query vs precomputed question embeddings
         if method is "cosine":
+            print("using cosine similarity")
             canidate_response_idxs = self.__compute_cosine_similarity(query_embedding) 
         elif method is "softmax":
+            print("using softmax")
             canidate_response_idxs = self.__compute_indicies_softmax(query_embedding) 
         
         if canidate_response_idxs is None:
@@ -54,13 +64,6 @@ class Bot:
         best_answers = self._answer_embeddings[best_answer_index]
         return best_answers, best_answer_index
 
-    def answer_query(self, query):
-        try:
-            query_embedding = self.textembedder.create_sentence_embeddings(query)
-            response_embeddings, response_indexes = self.find_embeddings(query_embedding, "softmax")
-            return self._answer_arrs[response_indexes[0]]
-        except Exception as e:
-            print("Error getting answer query - {}".format(e))
 
     """Private Methods"""
     def __compute_cosine_similarity(self, query_embedding):
