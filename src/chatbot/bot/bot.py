@@ -86,7 +86,9 @@ class Bot:
     def __compute_indicies_softmax(self, query_embedding):
         try:
             input_tensor = torch.matmul(query_embedding, torch.transpose(self._question_embeddings, 0, 1))
+            print("input_tensor: {}".format(type(input_tensor)))
             canidate_response_idxs = nn.Softmax(input_tensor)
+            print("tensor went through softmax layer.")
             return input_tensor
         except Exception as e:
             print("Error computing indicies via softmax - {}".format(e))
