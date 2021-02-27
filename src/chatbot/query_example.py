@@ -29,11 +29,14 @@ def create_question_answer_arrs(datareader):
     return questions, answers
 
 if __name__ == "__main__":
-    datareader = DataReader('../../data/subset_AIML_QAdataset.csv')
+    datareader = DataReader('../../data/AIML_QAdataset.csv')
     questions, answers = create_question_answer_arrs(datareader)
         
-    tokenizer = "sentence-transformers/bert-base-nli-mean-tokens"
-    model = "sentence-transformers/bert-base-nli-mean-tokens"
+    # tokenizer = "sentence-transformers/bert-base-nli-mean-tokens"
+    # model = "sentence-transformers/bert-base-nli-mean-tokens"
+
+    tokenizer = "sentence-transformers/distilbert-base-nli-stsb-mean-tokens"
+    model = "sentence-transformers/distilbert-base-nli-stsb-mean-tokens"
 
     chatbot = Bot(tokenizer, model)
     chatbot.init_embeddings(questions, answers)
