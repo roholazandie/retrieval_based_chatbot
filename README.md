@@ -18,3 +18,31 @@ Implement a reader with ```__iter__``` method to get at least a pair of (questio
 
 
 
+## Running the query_example script
+This script reads in a CSV file containing 4 columns, pattern, topic, that, and template (derived from a dataset of AIML files). The script loads a pretrained Bert model used for sentence embedding. The model is used by creating a sentence embedding of the query and then finding the closest match in the dataset, using semantic similarity calculated my a softmax layer, and returns the matched response.
+
+Follow these steps to run the script.
+- Make sure you have a python virtual environment set up.
+```
+virtualenv -p python3 env
+```
+
+- Activate the environment.
+```
+source env/bin/activate
+```
+
+- Install requirements.
+```
+pip install -r requirements.txt
+```
+
+- Cd into the chatbot folder.
+```
+cd src/chatbot
+```
+
+- Run the python script.
+```
+python query_example
+```
