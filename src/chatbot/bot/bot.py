@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 import torch.nn as nn
 
-from textembedder.textembedder import TextEmbedder
+from chatbot.textembedder.textembedder import TextEmbedder
 
 class Bot:
     def __init__(self, tokenizer_filepath, model_filepath):
@@ -21,6 +21,7 @@ class Bot:
             self._question_arrs = questions
             self._answer_embeddings = self._textembedder.create_sentence_embeddings(answers)
             self._question_embeddings = self._textembedder.create_sentence_embeddings(questions)
+            # TODO: Jarid you have to save _answer_embeddings and _question_embeddings with torch.save(...)
             print("Finished created embeddings.")
         except Exception as e:
             print("Error initializing question and answer embeddings - {}".format(e))
@@ -37,6 +38,8 @@ class Bot:
             print("Error getting answer query - {}".format(e))
 
     def pickle_embeddings(self, question_sentences, answer_sentences, filepath="../pickled_embeddings/qa_sentences_embeddings.pkl"):
+        #TODO Jarid don't use pickle, torch.save() is a better option for tensors,
+        # I also prefer save_embeddings
         try:
             print("Storing file on disc...")
             with open(filepath, "wb") as fOut:
@@ -69,6 +72,7 @@ class Bot:
 
 
     """Private Methods"""
+    #TODO Jarid: private methods start with one underscore not two
     def __compute_cosine_similarity(self, query_embedding):
         try:
             print("\tcomputing similarity of query...")

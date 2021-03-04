@@ -4,8 +4,7 @@ import torch
 from sklearn.model_selection import train_test_split
 
 from transformers import AutoTokenizer, AutoModel
-from textembedder.textembedder import TextEmbedder
-
+from chatbot.textembedder.textembedder import TextEmbedder
 
 class DataReader:
     def __init__(self, filepath):
@@ -37,7 +36,7 @@ class DataReader:
 
 
 if __name__ == "__main__":
-    datareader = DataReader('../../data/subset_AIML_QAdataset.csv')
+    datareader = DataReader('../../../data/subset_AIML_QAdataset.csv')
     # print(datareader.df.head())
     # print(datareader.df.info)
 

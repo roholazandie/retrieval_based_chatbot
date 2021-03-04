@@ -2,6 +2,6 @@ wheel
 numpy
 pandas
 scikit-learn
-transformers==3.1
+transformers
 torch==1.6
 # sentence-transformers

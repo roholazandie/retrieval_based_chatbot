@@ -1,10 +1,11 @@
 import pickle
 
-from datareader.datareader import DataReader
-from textembedder.textembedder import TextEmbedder
-from bot.bot import Bot
+from chatbot.datareader.datareader import DataReader
+from chatbot.textembedder.textembedder import TextEmbedder
+from chatbot.bot.bot import Bot
 
 def create_question_answer_arrs(datareader):
+    #TODO Jarid, this method needs refactoring, don't use exit()
     questions = []
     answers = []
     try:
@@ -20,6 +21,7 @@ def create_question_answer_arrs(datareader):
             questions.append(row[0]) #= np.append(questions, row[0])
             answers.append(row[1]) #= np.append(answers, row[1])
     except Exception as e:
+        # TODO Jarid: you should always raise the exception, this is not safe
         if e is not "single positional indexer is out-of-bounds":
             print("Finished creating question/answer documents")
             # exit()
