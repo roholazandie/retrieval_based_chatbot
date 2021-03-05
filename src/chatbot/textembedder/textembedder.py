@@ -40,6 +40,7 @@ class TextEmbedder:
                                                   encoded_input['attention_mask']),
                                     batch_size=100,
                                     shuffle=False, num_workers=0)
+            print("Created dataloader")
 
             all_pooled_embeddings = self._compute_token_embedding(dataloader)
 
@@ -58,6 +59,7 @@ class TextEmbedder:
             #return self.__mean_pooling(model_output, encoded_input['attention_mask'])
         except Exception as e:
             print("Error creating sentence embeddings - {}".format(e))
+            raise Exception
 
     def _compute_token_embedding(self, dataloader):
         all_pooled_embeddings = []
