@@ -66,9 +66,9 @@ class TextEmbedder:
         with torch.no_grad():
             for i, data in tqdm(enumerate(dataloader)):
                 embedded_batch = self._model(input_ids=data[0], token_type_ids=data[1], attention_mask=data[2])
-                print("embedded_batch: {}".format(type(embedded_batch))
-                print("embedded_batch[0]: {}".format(type(embedded_batch[0]))
-                print("embedded_batch[1]: {}".format(type(embedded_batch[1]))
+                print("embedded_batch: {}".format(type(embedded_batch)))
+                print("embedded_batch[0]: {}".format(type(embedded_batch[0])))
+                print("embedded_batch[1]: {}".format(type(embedded_batch[1])))
                 all_pooled_embeddings.append(embedded_batch['pooler_output'])
 
         all_pooled_embeddings = torch.cat(all_pooled_embeddings, dim=0)
