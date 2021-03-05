@@ -32,6 +32,7 @@ class TextEmbedder:
             print("Encoded input - {}".format(type(encoded_input)))
 
             if torch.cuda.is_available():
+                print("Putting encoded_input onto cuda.")
                 encoded_input = encoded_input.to('cuda')
 
             dataloader = DataLoader(TensorDataset(encoded_input['input_ids'],
