@@ -38,7 +38,7 @@ class TextEmbedder:
             dataloader = DataLoader(TensorDataset(encoded_input['input_ids'],
                                                   encoded_input['token_type_ids'],
                                                   encoded_input['attention_mask']),
-                                    batch_size=300,
+                                    batch_size=1000,
                                     shuffle=False, num_workers=0)
             print("Created dataloader")
 
