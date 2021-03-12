@@ -13,7 +13,6 @@ class TextEmbedder:
         self._model = AutoModel.from_pretrained(model_filepath)
         if torch.cuda.is_available():
             print("Cuda is available, putting the pretrained model on the GPU.")
-            # self._tokenizer.to('cuda')
             self._model.to('cuda')
 
     @property
@@ -29,7 +28,6 @@ class TextEmbedder:
             # Tokenize questions
             encoded_input = self._tokenizer(document, padding=True, truncation=True, max_length=128,
                                             return_tensors='pt')
-            print("Encoded input - {}".format(type(encoded_input)))
 
             if torch.cuda.is_available():
                 print("Putting encoded_input onto cuda.")
@@ -38,9 +36,9 @@ class TextEmbedder:
             dataloader = DataLoader(TensorDataset(encoded_input['input_ids'],
                                                   encoded_input['token_type_ids'],
                                                   encoded_input['attention_mask']),
-                                    batch_size=320,
+                                    batch_size=297,
                                     shuffle=False, num_workers=0)
-            print("Created dataloader")
+
 
             all_pooled_embeddings = self._compute_token_embedding(dataloader)
 
@@ -66,9 +64,6 @@ class TextEmbedder:
         with torch.no_grad():
             for i, data in tqdm(enumerate(dataloader)):
                 embedded_batch = self._model(input_ids=data[0], token_type_ids=data[1], attention_mask=data[2])
-                print("embedded_batch: {}".format(type(embedded_batch)))
-                print("embedded_batch[0]: {}".format(type(embedded_batch[0])))
-                print("embedded_batch[1]: {}".format(type(embedded_batch[1])))
                 all_pooled_embeddings.append(embedded_batch['pooler_output'])
 
         all_pooled_embeddings = torch.cat(all_pooled_embeddings, dim=0)

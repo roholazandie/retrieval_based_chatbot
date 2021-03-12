@@ -31,7 +31,7 @@ def create_question_answer_arrs(datareader):
     return questions, answers
 
 if __name__ == "__main__":
-    datareader = DataReader('./data/AIML_QAdataset.csv')
+    datareader = DataReader('./data/subset_AIML_QAdataset.csv')
     questions, answers = create_question_answer_arrs(datareader)
         
     tokenizer = "sentence-transformers/bert-base-nli-mean-tokens"
@@ -42,7 +42,6 @@ if __name__ == "__main__":
 
     chatbot = Bot(tokenizer, model)
     chatbot.init_embeddings(questions, answers)
-    # chatbot.pickle_embeddings(questions, answers)
 
     queries = ["What is your name?", "How are you today Ryan?", "You just said that.", "Can you tell me a joke?", "I love a good adventure book.", "What year is it?"]
     print("Asking questions...")

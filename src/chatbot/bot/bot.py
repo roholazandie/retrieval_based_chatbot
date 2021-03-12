@@ -8,7 +8,6 @@ from chatbot.textembedder.textembedder import TextEmbedder
 class Bot:
     def __init__(self, tokenizer_filepath, model_filepath):
         self._textembedder = TextEmbedder(tokenizer_filepath, model_filepath)
-        # self.init_embeddings()
         print("Finished creating model and tokenizer.")
 
     @property
@@ -19,9 +18,11 @@ class Bot:
         try:
             self._answer_arrs = answers
             self._question_arrs = questions
-            self._answer_embeddings = self._textembedder.create_sentence_embeddings(answers)
-            self._question_embeddings = self._textembedder.create_sentence_embeddings(questions)
-            # TODO: Jarid you have to save _answer_embeddings and _question_embeddings with torch.save(...)
+            answer_embeddings = self._textembedder.create_sentence_embeddings(answers)
+            question_embeddings = self._textembedder.create_sentence_embeddings(questions)
+
+            torch.save(answer_embeddings, 'models/answer_embeddings.pt')
+            torch.save(question_embeddings, 'models/question_embeddings.pt')
             print("Finished created embeddings.")
         except Exception as e:
             print("Error initializing question and answer embeddings - {}".format(e))
@@ -37,20 +38,6 @@ class Bot:
         except Exception as e:
             print("Error getting answer query - {}".format(e))
 
-    def pickle_embeddings(self, question_sentences, answer_sentences, filepath="../pickled_embeddings/qa_sentences_embeddings.pkl"):
-        #TODO Jarid don't use pickle, torch.save() is a better option for tensors,
-        # I also prefer save_embeddings
-        try:
-            print("Storing file on disc...")
-            with open(filepath, "wb") as fOut:
-                pickle.dump({'question_sentences': question_sentences, 
-                        'answer_sentences': answer_sentences, 
-                        'question_embeddings': self._question_embeddings, 
-                        'answer_embeddings': self._answer_embeddings}, fOut)
-            print("Completed pickling embeddings to disk...")
-        except Exception as e:
-            print("Error pickling embeddings! - {}".format(e))
-
     def find_embeddings(self, query_embedding, method="cosine"):
         # Get similarity of query vs precomputed question embeddings
         if method is "cosine":
@@ -65,7 +52,8 @@ class Bot:
 
         try:
             best_answer_index = np.argmax(canidate_response_idxs.cpu(), axis=1)
-            best_answers = self._answer_embeddings[best_answer_index]
+            answer_embeddings = torch.load('models/answer_embeddings.pt')
+            best_answers = answer_embeddings[best_answer_index]
         except Exception as e:
             print("Error finding embeddings - {}".format(e))
         return best_answers, best_answer_index
@@ -92,7 +80,9 @@ class Bot:
 
     def __compute_indicies_softmax(self, query_embedding):
         try:
-            input_tensor = torch.matmul(query_embedding, torch.transpose(self._question_embeddings, 0, 1))
+            # TODO: add check for if it should be on cuda or cpu
+            question_embeddings = torch.load('models/question_embeddings.pt')
+            input_tensor = torch.matmul(query_embedding, torch.transpose(question_embeddings, 0, 1))
             # print("input_tensor: {}".format(type(input_tensor)))
             canidate_response_idxs = nn.Softmax(input_tensor)
             # print("tensor went through softmax layer.")
