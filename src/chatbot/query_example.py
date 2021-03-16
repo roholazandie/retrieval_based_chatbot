@@ -5,11 +5,17 @@ from chatbot.textembedder.textembedder import TextEmbedder
 from chatbot.bot.bot import Bot
 
 def create_question_answer_arrs(datareader):
-    #TODO Jarid, this method needs refactoring, don't use exit()
     questions = []
     answers = []
     try:
         for row in datareader:
+            # Check for end of file
+            if row == "End of file":
+                return questions, answers
+
+
+            # NOTE: This check is only for test enviornments to double check datasets.
+            #       DO NOT use this check in a production enviornment.
             # This checks to make sure only strings will be added to our documents.
             # If we find that one of the rows does not contain a string we exit.
             # (Helps for finding bad data)
@@ -21,18 +27,14 @@ def create_question_answer_arrs(datareader):
             questions.append(row[0]) #= np.append(questions, row[0])
             answers.append(row[1]) #= np.append(answers, row[1])
     except Exception as e:
-        # TODO Jarid: you should always raise the exception, this is not safe
-        if e is not "single positional indexer is out-of-bounds":
-            print("Finished creating question/answer documents")
-            # exit()
-        else: 
-            print("Error creating file! - {}".format(e))
-
-    return questions, answers
+        print("Error creating file! - {}".format(e))
+        raise Exception
 
 if __name__ == "__main__":
     datareader = DataReader('./data/subset_AIML_QAdataset.csv')
+    print("Finished creating datareader.")
     questions, answers = create_question_answer_arrs(datareader)
+    print("Finished created questions and answers.")
         
     tokenizer = "sentence-transformers/bert-base-nli-mean-tokens"
     model = "sentence-transformers/bert-base-nli-mean-tokens"

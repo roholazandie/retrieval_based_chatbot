@@ -18,11 +18,15 @@ class Bot:
         try:
             self._answer_arrs = answers
             self._question_arrs = questions
-            answer_embeddings = self._textembedder.create_sentence_embeddings(answers)
-            question_embeddings = self._textembedder.create_sentence_embeddings(questions)
 
-            torch.save(answer_embeddings, 'models/answer_embeddings.pt')
-            torch.save(question_embeddings, 'models/question_embeddings.pt')
+            self._answer_embeddings = self._textembedder.create_sentence_embeddings(answers)
+            self._question_embeddings = self._textembedder.create_sentence_embeddings(questions)
+
+            # answer_embeddings = self._textembedder.create_sentence_embeddings(answers)
+            # question_embeddings = self._textembedder.create_sentence_embeddings(questions)
+            # torch.save(answer_embeddings, 'models/answer_embeddings.pt')
+            # torch.save(question_embeddings, 'models/question_embeddings.pt')
+
             print("Finished created embeddings.")
         except Exception as e:
             print("Error initializing question and answer embeddings - {}".format(e))
@@ -42,10 +46,10 @@ class Bot:
         # Get similarity of query vs precomputed question embeddings
         if method is "cosine":
             print("using cosine similarity")
-            canidate_response_idxs = self.__compute_cosine_similarity(query_embedding) 
+            canidate_response_idxs = self._compute_cosine_similarity(query_embedding) 
         elif method is "softmax":
             print("using softmax")
-            canidate_response_idxs = self.__compute_indicies_softmax(query_embedding) 
+            canidate_response_idxs = self._compute_indicies_softmax(query_embedding) 
         
         if canidate_response_idxs is None:
             raise Exception
@@ -60,8 +64,7 @@ class Bot:
 
 
     """Private Methods"""
-    #TODO Jarid: private methods start with one underscore not two
-    def __compute_cosine_similarity(self, query_embedding):
+    def _compute_cosine_similarity(self, query_embedding):
         try:
             print("\tcomputing similarity of query...")
             
@@ -78,12 +81,13 @@ class Bot:
             print("Error computing similarity - {}".format(e))
             raise Exception
 
-    def __compute_indicies_softmax(self, query_embedding):
+    def _compute_indicies_softmax(self, query_embedding):
         try:
-            # TODO: add check for if it should be on cuda or cpu
-            question_embeddings = torch.load('models/question_embeddings.pt')
-            input_tensor = torch.matmul(query_embedding, torch.transpose(question_embeddings, 0, 1))
-            # print("input_tensor: {}".format(type(input_tensor)))
+            input_tensor = torch.matmul(query_embedding, torch.transpose(self._question_embeddings, 0, 1))
+            # # TODO: add check for if it should be on cuda or cpu
+            # question_embeddings = torch.load('models/question_embeddings.pt')
+            # input_tensor = torch.matmul(query_embedding, torch.transpose(question_embeddings, 0, 1))
+            
             canidate_response_idxs = nn.Softmax(input_tensor)
             # print("tensor went through softmax layer.")
             return input_tensor

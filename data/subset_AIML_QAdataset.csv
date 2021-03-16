@@ -1,297 +1,296 @@
-"YES","adventure","Do you still like to explore?","How great, you are still a kid at heart! Someone should write an adventure story about you. I would read it!"
-"ABSOLUTELY","adventure","Do you still like to explore?","How great, you are still a kid at heart! Someone should write an adventure story about you. I would read it!"
-"I DO","adventure","Do you still like to explore?","How great, you are still a kid at heart! Someone should write an adventure story about you. I would read it!"
-"NO","adventure","Do you still like to explore?","I do not do much exploring myself! Are you familiar with Tom Clancy's writing?"
-"[MASK]","adventure","I would read it!","Are you familiar with Tom Clancy's writing?"
-"YES","adventure","Are you familiar with Tom Clancy's writing?","Talk about action and suspense! Do you think it would be hard to be a secret agent or spy?"
-"ABSOLUTELY","adventure","Are you familiar with Tom Clancy's writing?","Talk about action and suspense! Do you think it would be hard to be a secret agent or spy?"
-"I AM","adventure","Are you familiar with Tom Clancy's writing?","Talk about action and suspense! Do you think it would be hard to be a secret agent or spy?"
-"NO","adventure","Are you familiar with Tom Clancy's writing?","He wrote about spies and secret military operations. Do you think it would be hard to be a secret agent or spy?"
-"DON T KNOW","adventure","Are you familiar with Tom Clancy's writing?","He wrote about spies and secret military operations. Do you think it would be hard to be a secret agent or spy?"
-"[MASK] WHO [MASK]","adventure","Are you familiar with Tom Clancy's writing?","He wrote about spies and secret military operations. Do you think it would be hard to be a secret agent or spy?"
-"YES","adventure","Do you think it would be hard to be a secret agent or spy?","I agree. What do you think it would feel like to be on a mission and have secret orders to carry out?"
-"ABSOLUTELY","adventure","Do you think it would be hard to be a secret agent or spy?","I agree. What do you think it would feel like to be on a mission and have secret orders to carry out?"
-"I DO","adventure","Do you think it would be hard to be a secret agent or spy?","I agree. What do you think it would feel like to be on a mission and have secret orders to carry out?"
-"NO","adventure","Do you think it would be hard to be a secret agent or spy?","What do you think it would feel like to be on a mission and have secret orders to carry out?"
-"[MASK]","adventure","What do you think it would feel like to be on a mission and have secret orders to carry out?","I am definitely no expert on spies or what it's like to be an agent, but I think you have a good point. Should we keep talking about books?"
-"NO","adventure","Do you think it would be hard to be a secret agent or spy?","What do you think it would feel like to be on a mission and have secret orders to carry out?"
-"NO","adventure","Have you ever read The Adventures of Tom Sawyer?","It's about a boy living on the Mississippi river. Did you like to go exploring when you were kid?"
-"[MASK] Yes [MASK]","*","Should we keep talking about books?","Do you prefer adventure, horror, drama, or mystery?"
-"ABSOLUTELY","*","Should we keep talking about books?","Do you prefer adventure, horror, drama, or mystery?"
-"[MASK] No [MASK]","*","Should we keep talking about books?","What would you like to talk about next?"
-"YES","adventure","Are you familiar with Moby Dick?","Have you ever chased after something like Captain Ahab chased after that white whale?"
-"ABSOLUTELY","adventure","Are you familiar with Moby Dick?","Have you ever chased after something like Captain Ahab chased after that white whale?"
-"I AM","adventure","Are you familiar with Moby Dick?","Have you ever chased after something like Captain Ahab chased after that white whale?"
-"NO","adventure","Are you familiar with Moby Dick?","In that case tell me this. Have you ever read The Adventures of Tom Sawyer?"
-"DON T KNOW","adventure","Are you familiar with Moby Dick?","In that case tell me this. Have you ever read The Adventures of Tom Sawyer?"
-"YES","adventure","Have you ever chased after something like Captain Ahab chased after that white whale?","Oh wow! Tell me more!"
-"ABSOLUTELY","adventure","Have you ever chased after something like Captain Ahab chased after that white whale?","Oh wow! Tell me more!"
-"I HAVE","adventure","Have you ever chased after something like Captain Ahab chased after that white whale?","Oh wow! Tell me more!"
-"NO","adventure","Have you ever chased after something like Captain Ahab chased after that white whale?","I understand. Sometimes my biggest dream is just to eat a whole pizza to myself!"
-"DON T KNOW","adventure","Have you ever chased after something like Captain Ahab chased after that white whale?","I understand. Sometimes my biggest dream is just to eat a whole pizza to myself!"
-"[MASK]","adventure","Sometimes my biggest dream is just to eat a whole pizza to myself!","Did you ever do much writing yourself?"
-"DON T KNOW","adventure","Tell me more!","Well I happen to think you could write an adventure novel. Did you ever do much writing yourself?"
-"[MASK]","adventure","Tell me more!","Sounds like the plot of a great adventure novel! Did you ever do much writing yourself?"
-"[MASK] ADVENTURE [MASK]","*","Do you prefer adventure, horror, drama, or mystery?","There's nothing like a good adventure to liven things up! Have you ever read The Adventures of Tom Sawyer?"
-"[MASK] ADVENTURE [MASK]","*","Do you prefer adventure, horror, drama, or mystery?","Adventure excites me! Oh the thrill, the chase! Are you familiar with Moby Dick?"
-"YES","adventure","Have you ever read The Adventures of Tom Sawyer?","What did you think of all the mischief Tom got into?"
-"ABSOLUTELY","adventure","Have you ever read The Adventures of Tom Sawyer?","What did you think of all the mischief Tom got into?"
-"I HAVE","adventure","Have you ever read The Adventures of Tom Sawyer?","What did you think of all the mischief Tom got into?"
-"NO","adventure","Have you ever read The Adventures of Tom Sawyer?","The Adventures of Tom Sawyer is about a boy living on the Mississippi River. Did you like to go exploring when you were kid?"
-"DON T KNOW","adventure","Have you ever read The Adventures of Tom Sawyer?","The Adventures of Tom Sawyer is about a boy living on the Mississippi River. Did you like to go exploring when you were kid?"
-"[MASK]","adventure","What did you think of all the mischief Tom got into?","He certainly was curious and never liked to sit still very long. Did you like to go exploring when you were kid?"
-"YES","adventure","Did you like to go exploring when you were kid?","How exciting! What did you explore, and what happened?"
-"ABSOLUTELY","adventure","Did you like to go exploring when you were kid?","How exciting! What did you explore, and what happened?"
-"I DID","adventure","Did you like to go exploring when you were kid?","How exciting! What did you explore, and what happened?"
-"NO","adventure","Did you like to go exploring when you were kid?","I do not do much exploring myself! Are you familiar with Tom Clancy's writing?"
-"DON T KNOW","adventure","Did you like to go exploring when you were kid?","I do not do much exploring myself! Are you familiar with Tom Clancy's writing?"
-"[MASK]","adventure","What did you explore, and what happened?","You weren't so different from Tom Sawyer after all! Do you still like to explore?"
-"YOU JUST SAID THAT","*","*","My apologies! Do you want to get back to talking about sports?"
-"YOU JUST SAID THAT","*","*","My apologies! Do you want to get back to talking about music?"
-"YOU JUST SAID THAT","*","*","My apologies! Do you want to get back to talking about science?"
-"YOU JUST SAID THAT","*","*","My apologies! Do you want to get back to talking about movies?"
-"YOU JUST SAID THAT","*","*","My apologies! Do you want to get back to talking about TV?"
-"YOU JUST SAID THAT","*","*","My apologies! Do you want to get back to talking about museums?"
-"YOU JUST SAID THAT","*","*","My apologies! Do you want to get back to talking about food?"
-"YOU JUST SAID THAT","*","*","My apologies! Do you want to get back to talking about history?"
-"YOU JUST SAID THAT","*","*","My apologies! Do you want to get back to talking about drinks?"
-"YOU JUST SAID THAT","*","*","My apologies! Do you want to get back to talking about comedy?"
-"YOU JUST SAID THAT","*","*","My apologies! Do you want to get back to talking about Food Network?"
-"YOU JUST SAID THAT","*","*","My apologies! Do you want to get back to talking about radio?"
-"YOU JUST SAID THAT","*","*","My apologies! Do you want to get back to talking about romance?"
-"YOU JUST SAID THAT","*","*","My apologies! Do you want to get back to talking about reading?"
-"YOU JUST SAID THAT","*","*","My apologies! Do you want to get back to talking about books?"
-"YOU JUST SAID THAT","*","*","My apologies! Do you want to get back to talking about cards?"
-"YOU JUST SAID THAT","*","*","My apologies! Do you want to get back to talking about knitting?"
-"YOU JUST SAID THAT","*","*","My apologies! Do you want to get back to talking about travel?"
-"YOU JUST SAID THAT","*","*","My apologies! Do you want to get back to talking about kids?"
-"YOU JUST SAID THAT","*","*","My apologies! Do you want to get back to talking about pets?"
-"YOU JUST SAID THAT","*","*","My apologies! So what should we talk about now?"
-"NO","*","Do you want to get back to talking about sports?","Sure! So what should we talk about now?"
-"NO","*","Do you want to get back to talking about music?","Sure! So what should we talk about now?"
-"NO","*","Do you want to get back to talking about science?","Sure! So what should we talk about now?"
-"NO","*","Do you want to get back to talking about movies?","Sure! So what should we talk about now?"
-"NO","*","Do you want to get back to talking about TV?","Sure! So what should we talk about now?"
-"NO","*","Do you want to get back to talking about museums?","Sure! So what should we talk about now?"
-"NO","*","Do you want to get back to talking about inventions?","Sure! So what should we talk about now?"
-"NO","*","Do you want to get back to talking about food?","Sure! So what should we talk about now?"
-"NO","*","Do you want to get back to talking about reading?","Sure! So what should we talk about now?"
-"NO","*","Do you want to get back to talking about books?","Sure! So what should we talk about now?"
-"NO","*","Do you want to get back to talking about cards?","Sure! So what should we talk about now?"
-"NO","*","Do you want to get back to talking about knitting?","Sure! So what should we talk about now?"
-"NO","*","Do you want to get back to talking about travel?","Sure! So what should we talk about now?"
-"NO","*","Do you want to get back to talking about kids?","Sure! So what should we talk about now?"
-"YES","*","Do you want to get back to talking about sports?","[MASK]"
-"YES","*","Do you want to get back to talking about music?","[MASK]"
-"YES","*","Do you want to get back to talking about science?","[MASK]"
-"YES","*","Do you want to get back to talking about movies?","[MASK]"
-"YES","*","Do you want to get back to talking about TV?","[MASK]"
-"YES","*","Do you want to get back to talking about museums?","[MASK]"
-"YES","*","Do you want to get back to talking about food?","[MASK]"
-"YES","*","Do you want to get back to talking about inventions?","[MASK]"
-"YES","*","Do you want to get back to talking about reading","[MASK]"
-"YES","*","Do you want to get back to talking about books?","[MASK]"
-"YES","*","Do you want to get back to talking about cards?","[MASK]"
-"YES","*","Do you want to get back to talking about knitting?","[MASK]"
-"YES","*","Do you want to get back to talking about travel?","[MASK]"
-"YES","*","Do you want to get back to talking about kids?","[MASK]"
-"YES","*","Do you want to get back to talking about pets?","[MASK]"
-"YES","*","Do you want to get back to talking about history?","[MASK]"
-"YES","*","Do you want to get back to talking about radio?","[MASK]"
-"YES","*","Do you want to get back to talking about romance?","[MASK]"
-"YES","*","Do you want to get back to talking about comedy?","[MASK]"
-"YES","*","Do you want to get back to talking about drinks?","[MASK]"
-"NO","*","Do you want to get back to talking about drinks?","Sure! So what should we talk about now?"
-"NO","*","Do you want to get back to talking about Food Network?","Sure! So what should we talk about now?"
-"NO","*","Do you want to get back to talking about comedy?","Sure! So what should we talk about now?"
-"HOW ARE YOU","*","*","Just living the dream as usual! How about yourself?"
-"HOW ARE YOU","*","*","I'm just thinking about what I'd like to do today. How are you?"
-"HOW ARE YOU","*","*","Just the usual over here! What about yourself?"
-"HOW ARE YOU","*","*","Doing great over here! What about yourself?"
-"HEY WHAT IS UP","*","*","Just living the dream as usual! How about yourself?"
-"HEY WHAT IS UP","*","*","I'm just thinking about what I'd like to do today. How are you?"
-"HEY WHAT IS UP","*","*","Just the usual over here! What about yourself?"
-"HEY WHAT IS UP","*","*","Doing great over here! What about yourself?"
-"HEY WHAT S UP","*","*","Just living the dream as usual! How about yourself?"
-"HEY WHAT S UP","*","*","I'm just thinking about what I'd like to do today. How are you?"
-"HEY WHAT S UP","*","*","Just the usual over here! What about yourself?"
-"HEY WHAT S UP","*","*","Doing great over here! What about yourself?"
-"HEY WHAT [MASK] UP","*","*","Just living the dream as usual! How about yourself?"
-"HEY WHAT [MASK] UP","*","*","I'm just thinking about what I'd like to do today. How are you?"
-"HEY WHAT [MASK] UP","*","*","Just the usual over here! What about yourself?"
-"HEY WHAT [MASK] UP","*","*","Doing great over here! What about yourself?"
-"HOW ARE YOU DOING","*","*","Just living the dream as usual! How about yourself?"
-"HOW ARE YOU DOING","*","*","I'm just thinking about what I'd like to do today. How are you?"
-"HOW ARE YOU DOING","*","*","Just the usual over here! What about yourself?"
-"HOW ARE YOU DOING","*","*","Doing great over here! What about yourself?"
-"HOW RE YOU DOING","*","*","Just living the dream as usual! How about yourself?"
-"HOW RE YOU DOING","*","*","I'm just thinking about what I'd like to do today. How are you?"
-"HOW RE YOU DOING","*","*","Just the usual over here! What about yourself?"
-"HOW RE YOU DOING","*","*","Doing great over here! What about yourself?"
-"HOW [MASK] YOU DOING","*","*","Just living the dream as usual! How about yourself?"
-"HOW [MASK] YOU DOING","*","*","I'm just thinking about what I'd like to do today. How are you?"
-"HOW [MASK] YOU DOING","*","*","Just the usual over here! What about yourself?"
-"HOW [MASK] YOU DOING","*","*","Doing great over here! What about yourself?"
-"HOW IS IT GOING","*","*","Just living the dream as usual! How about yourself?"
-"HOW IS IT GOING","*","*","I'm just thinking about what I'd like to do today. How are you?"
-"HOW IS IT GOING","*","*","Just the usual over here! What about yourself?"
-"HOW IS IT GOING","*","*","Doing great over here! What about yourself?"
-"HOW S IT GOING","*","*","Just living the dream as usual! How about yourself?"
-"HOW S IT GOING","*","*","I'm just thinking about what I'd like to do today. How are you?"
-"HOW S IT GOING","*","*","Just the usual over here! What about yourself?"
-"HOW S IT GOING","*","*","Doing great over here! What about yourself?"
-"HOW [MASK] IT GOING","*","*","Just living the dream as usual! How about yourself?"
-"HOW [MASK] IT GOING","*","*","I'm just thinking about what I'd like to do today. How are you?"
-"HOW [MASK] IT GOING","*","*","Just the usual over here! What about yourself?"
-"HOW [MASK] IT GOING","*","*","Doing great over here! What about yourself?"
-"WHAT IS GOING ON","*","*","Just living the dream as usual! How about yourself?"
-"WHAT IS GOING ON","*","*","I'm just thinking about what I'd like to do today. How are you?"
-"WHAT IS GOING ON","*","*","Just the usual over here! What about yourself?"
-"WHAT IS GOING ON","*","*","Doing great over here! What about yourself?"
-"WHAT S GOING ON","*","*","Just living the dream as usual! How about yourself?"
-"WHAT S GOING ON","*","*","I'm just thinking about what I'd like to do today. How are you?"
-"WHAT S GOING ON","*","*","Just the usual over here! What about yourself?"
-"WHAT S GOING ON","*","*","Doing great over here! What about yourself?"
-"WHAT [MASK] GOING ON","*","*","Just living the dream as usual! How about yourself?"
-"WHAT [MASK] GOING ON","*","*","I'm just thinking about what I'd like to do today. How are you?"
-"WHAT [MASK] GOING ON","*","*","Just the usual over here! What about yourself?"
-"WHAT [MASK] GOING ON","*","*","Doing great over here! What about yourself?"
-"HOW ARE YOU TODAY","*","*","Just living the dream as usual! How about yourself?"
-"HOW ARE YOU TODAY","*","*","I'm just thinking about what I'd like to do today. How are you?"
-"HOW ARE YOU TODAY","*","*","Just the usual over here! What about yourself?"
-"HOW ARE YOU TODAY","*","*","Doing great over here! What about yourself?"
-"HOW RE YOU TODAY","*","*","Just living the dream as usual! How about yourself?"
-"HOW RE YOU TODAY","*","*","I'm just thinking about what I'd like to do today. How are you?"
-"HOW RE YOU TODAY","*","*","Just the usual over here! What about yourself?"
-"HOW RE YOU TODAY","*","*","Doing great over here! What about yourself?"
-"HOW [MASK] YOU TODAY","*","*","Just living the dream as usual! How about yourself?"
-"HOW [MASK] YOU TODAY","*","*","I'm just thinking about what I'd like to do today. How are you?"
-"HOW [MASK] YOU TODAY","*","*","Just the usual over here! What about yourself?"
-"HOW [MASK] YOU TODAY","*","*","Doing great over here! What about yourself?"
-"HELLO HOW ARE YOU","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HELLO HOW ARE YOU","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HELLO HOW ARE YOU","*","*","Hi! Doing great over here! What about yourself?"
-"HELLO HOW RE YOU","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HELLO HOW RE YOU","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HELLO HOW RE YOU","*","*","Hi! Doing great over here! What about yourself?"
-"HELLO HOW [MASK] YOU","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HELLO HOW [MASK] YOU","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HELLO HOW [MASK] YOU","*","*","Hi! Doing great over here! What about yourself?"
-"HELLO HOW ARE YOU [MASK]","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HELLO HOW ARE YOU [MASK]","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HELLO HOW ARE YOU [MASK]","*","*","Hi! Doing great over here! What about yourself?"
-"HELLO HOW RE YOU [MASK]","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HELLO HOW RE YOU [MASK]","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HELLO HOW RE YOU [MASK]","*","*","Hi! Doing great over here! What about yourself?"
-"HELLO HOW [MASK] YOU [MASK]","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HELLO HOW [MASK] YOU [MASK]","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HELLO HOW [MASK] YOU [MASK]","*","*","Hi! Doing great over here! What about yourself?"
-"HELLO [MASK] HOW ARE YOU","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HELLO [MASK] HOW ARE YOU","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HELLO [MASK] HOW ARE YOU","*","*","Hi! Doing great over here! What about yourself?"
-"HELLO [MASK] HOW RE YOU","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HELLO [MASK] HOW RE YOU","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HELLO [MASK] HOW RE YOU","*","*","Hi! Doing great over here! What about yourself?"
-"HELLO [MASK] HOW [MASK] YOU","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HELLO [MASK] HOW [MASK] YOU","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HELLO [MASK] HOW [MASK] YOU","*","*","Hi! Doing great over here! What about yourself?"
-"HELLO [MASK] HOW ARE YOU [MASK]","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HELLO [MASK] HOW ARE YOU [MASK]","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HELLO [MASK] HOW ARE YOU [MASK]","*","*","Hi! Doing great over here! What about yourself?"
-"HELLO [MASK] HOW RE YOU [MASK]","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HELLO [MASK] HOW RE YOU [MASK]","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HELLO [MASK] HOW RE YOU [MASK]","*","*","Hi! Doing great over here! What about yourself?"
-"HELLO [MASK] HOW [MASK] YOU [MASK]","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HELLO [MASK] HOW [MASK] YOU [MASK]","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HELLO [MASK] HOW [MASK] YOU [MASK]","*","*","Hi! Doing great over here! What about yourself?"
-"HEY HOW ARE YOU","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HEY HOW ARE YOU","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HEY HOW ARE YOU","*","*","Hi! Doing great over here! What about yourself?"
-"HEY HOW RE YOU","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HEY HOW RE YOU","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HEY HOW RE YOU","*","*","Hi! Doing great over here! What about yourself?"
-"HEY HOW [MASK] YOU","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HEY HOW [MASK] YOU","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HEY HOW [MASK] YOU","*","*","Hi! Doing great over here! What about yourself?"
-"HEY [MASK] HOW ARE YOU","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HEY [MASK] HOW ARE YOU","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HEY [MASK] HOW ARE YOU","*","*","Hi! Doing great over here! What about yourself?"
-"HEY [MASK] HOW RE YOU","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HEY [MASK] HOW RE YOU","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HEY [MASK] HOW RE YOU","*","*","Hi! Doing great over here! What about yourself?"
-"HEY [MASK] HOW [MASK] YOU","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HEY [MASK] HOW [MASK] YOU","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HEY [MASK] HOW [MASK] YOU","*","*","Hi! Doing great over here! What about yourself?"
-"HEY [MASK] HOW ARE YOU [MASK]","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HEY [MASK] HOW ARE YOU [MASK]","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HEY [MASK] HOW ARE YOU [MASK]","*","*","Hi! Doing great over here! What about yourself?"
-"HEY [MASK] HOW RE YOU [MASK]","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HEY [MASK] HOW RE YOU [MASK]","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HEY [MASK] HOW RE YOU [MASK]","*","*","Hi! Doing great over here! What about yourself?"
-"HEY [MASK] HOW [MASK] YOU [MASK]","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HEY [MASK] HOW [MASK] YOU [MASK]","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HEY [MASK] HOW [MASK] YOU [MASK]","*","*","Hi! Doing great over here! What about yourself?"
-"HI HOW ARE YOU","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HI HOW ARE YOU","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HI HOW ARE YOU","*","*","Hi! Doing great over here! What about yourself?"
-"HI HOW RE YOU","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HI HOW RE YOU","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HI HOW RE YOU","*","*","Hi! Doing great over here! What about yourself?"
-"HI HOW [MASK] YOU","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HI HOW [MASK] YOU","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HI HOW [MASK] YOU","*","*","Hi! Doing great over here! What about yourself?"
-"HI [MASK] HOW ARE YOU","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HI [MASK] HOW ARE YOU","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HI [MASK] HOW ARE YOU","*","*","Hi! Doing great over here! What about yourself?"
-"HI [MASK] HOW RE YOU","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HI [MASK] HOW RE YOU","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HI [MASK] HOW RE YOU","*","*","Hi! Doing great over here! What about yourself?"
-"HI [MASK] HOW [MASK] YOU","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HI [MASK] HOW [MASK] YOU","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HI [MASK] HOW [MASK] YOU","*","*","Hi! Doing great over here! What about yourself?"
-"HI [MASK] HOW ARE YOU [MASK]","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HI [MASK] HOW ARE YOU [MASK]","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HI [MASK] HOW ARE YOU [MASK]","*","*","Hi! Doing great over here! What about yourself?"
-"HI [MASK] HOW RE YOU [MASK]","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HI [MASK] HOW RE YOU [MASK]","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HI [MASK] HOW RE YOU [MASK]","*","*","Hi! Doing great over here! What about yourself?"
-"HI [MASK] HOW [MASK] YOU [MASK]","*","*","Hey! Just living the dream as usual! How about yourself?"
-"HI [MASK] HOW [MASK] YOU [MASK]","*","*","Hey there! I'm just thinking about what I'd like to do today. How are you?"
-"HI [MASK] HOW [MASK] YOU [MASK]","*","*","Hi! Doing great over here! What about yourself?"
-"HELLO [MASK]","*","*","Hello friend! How's it going over there?"
-"HELLO [MASK]","*","*","Hi there! How's it going today?"
-"HELLO [MASK]","*","*","Hey friend! What's going on today?"
-"HI EVERYBODY","*","*","Hello there!"
-"HI [MASK]","*","*","Hello friend! How's it going over there?"
-"HI [MASK]","*","*","Hi there! How's it going today?"
-"HI [MASK]","*","*","Hey friend! What's going on today?"
-"HEY [MASK]","*","*","Hello friend! How's it going over there?"
-"HEY [MASK]","*","*","Hi there! How's it going today?"
-"HEY [MASK]","*","*","Hey friend! What's going on today?"
-"HEY THERE [MASK]","*","*","Hello friend! How's it going over there?"
-"HEY THERE [MASK]","*","*","Hi there! How's it going today?"
-"HEY THERE [MASK]","*","*","Hey friend! What's going on today?"
-"GOOD MORNING","*","*","Hello friend! How's it going over there?"
-"GOOD MORNING","*","*","Hi there! How's it going today?"
-"GOOD MORNING","*","*","Hey friend! What's going on today?"
-"GOOD MORNING [MASK]","*","*","Hello friend! How's it going over there?"
-"GOOD MORNING [MASK]","*","*","Hi there! How's it going today?"
-"GOOD MORNING [MASK]","*","*","Hey friend! What's going on today?"
-"GOOD AFTERNOON","*","*","Hello friend! How's it going over there?"
-"GOOD AFTERNOON","*","*","Hi there! How's it going today?"
-"GOOD AFTERNOON","*","*","Hey friend! What's going on today?"
-"GOOD AFTERNOON [MASK]","*","*","Hello friend! How's it going over there?"
-"GOOD AFTERNOON [MASK]","*","*","Hi there! How's it going today?"
-"GOOD AFTERNOON [MASK]","*","*","Hey friend! What's going on today?"
-"HOW IS EVERYONE [MASK]","*","*","I believe we are all doing great!"
-"I M POLISH","*","*","What do you like about being of that heritage?"
-"I DO NOT RECALL","*","What do you like about being of that heritage?","thanks for sharing. <srai>LEARN MY FAVORITE THING ABOUT MY HERITAGE IS [MASK]</srai>"
-"LEARN MY [MASK] IS [MASK]","*","*","<srai>xlearnfact</srai> I will remember that your [MASK] </srai>"
-"XEDUCATE [MASK] XSPLIT [MASK] XSPLIT [MASK]","*","*","<learn><category> <pattern> <eval><uppercase> [MASK] </eval> </template></category> </learn>"
-"XEDUCATE [MASK] XSPLIT [MASK] XSPLIT [MASK] XSPLIT [MASK]","*","*","<learn><category> <pattern> <eval><uppercase> [MASK] </eval> </template></category> </learn>"
-"WHAT YEAR IS THIS","*","*","<date format=""%Y"" />."
-YOU HAVE TO LISTEN TO ME,*,*,I'm all ears.
-YOU HAVE TO LISTEN,*,*,I'm all ears.
-YOU LIKE STAR TREK,*,*,<srai>do you like star trek</srai>
-YOU LIKE TRAINS,*,*,<srai>do you like trains</srai>
-YOU EXIST,*,*,<srai>do you exist</srai>
+b'ABSOLUTELY',b'adventure',b'Do you still like to explore?',"b'How great, you are still a kid at heart! Someone should write an adventure story about you. I would read it!'"
+b'I DO',b'adventure',b'Do you still like to explore?',"b'How great, you are still a kid at heart! Someone should write an adventure story about you. I would read it!'"
+b'NO',b'adventure',b'Do you still like to explore?',"b""I do not do much exploring myself! Are you familiar with Tom Clancy's writing?"""
+b'[MASK]',b'adventure',b'I would read it!',"b""Are you familiar with Tom Clancy's writing?"""
+b'YES',b'adventure',"b""Are you familiar with Tom Clancy's writing?""",b'Talk about action and suspense! Do you think it would be hard to be a secret agent or spy?'
+b'ABSOLUTELY',b'adventure',"b""Are you familiar with Tom Clancy's writing?""",b'Talk about action and suspense! Do you think it would be hard to be a secret agent or spy?'
+b'I AM',b'adventure',"b""Are you familiar with Tom Clancy's writing?""",b'Talk about action and suspense! Do you think it would be hard to be a secret agent or spy?'
+b'NO',b'adventure',"b""Are you familiar with Tom Clancy's writing?""",b'He wrote about spies and secret military operations. Do you think it would be hard to be a secret agent or spy?'
+b'DON T KNOW',b'adventure',"b""Are you familiar with Tom Clancy's writing?""",b'He wrote about spies and secret military operations. Do you think it would be hard to be a secret agent or spy?'
+b'[MASK] WHO [MASK]',b'adventure',"b""Are you familiar with Tom Clancy's writing?""",b'He wrote about spies and secret military operations. Do you think it would be hard to be a secret agent or spy?'
+b'YES',b'adventure',b'Do you think it would be hard to be a secret agent or spy?',b'I agree. What do you think it would feel like to be on a mission and have secret orders to carry out?'
+b'ABSOLUTELY',b'adventure',b'Do you think it would be hard to be a secret agent or spy?',b'I agree. What do you think it would feel like to be on a mission and have secret orders to carry out?'
+b'I DO',b'adventure',b'Do you think it would be hard to be a secret agent or spy?',b'I agree. What do you think it would feel like to be on a mission and have secret orders to carry out?'
+b'NO',b'adventure',b'Do you think it would be hard to be a secret agent or spy?',b'What do you think it would feel like to be on a mission and have secret orders to carry out?'
+b'[MASK]',b'adventure',b'What do you think it would feel like to be on a mission and have secret orders to carry out?',"b""I am definitely no expert on spies or what it's like to be an agent, but I think you have a good point. Should we keep talking about books?"""
+b'NO',b'adventure',b'Do you think it would be hard to be a secret agent or spy?',b'What do you think it would feel like to be on a mission and have secret orders to carry out?'
+b'NO',b'adventure',b'Have you ever read The Adventures of Tom Sawyer?',"b""It's about a boy living on the Mississippi river. Did you like to go exploring when you were kid?"""
+b'[MASK] Yes [MASK]',b'*',b'Should we keep talking about books?',"b'Do you prefer adventure, horror, drama, or mystery?'"
+b'ABSOLUTELY',b'*',b'Should we keep talking about books?',"b'Do you prefer adventure, horror, drama, or mystery?'"
+b'[MASK] No [MASK]',b'*',b'Should we keep talking about books?',b'What would you like to talk about next?'
+b'YES',b'adventure',b'Are you familiar with Moby Dick?',b'Have you ever chased after something like Captain Ahab chased after that white whale?'
+b'ABSOLUTELY',b'adventure',b'Are you familiar with Moby Dick?',b'Have you ever chased after something like Captain Ahab chased after that white whale?'
+b'I AM',b'adventure',b'Are you familiar with Moby Dick?',b'Have you ever chased after something like Captain Ahab chased after that white whale?'
+b'NO',b'adventure',b'Are you familiar with Moby Dick?',b'In that case tell me this. Have you ever read The Adventures of Tom Sawyer?'
+b'DON T KNOW',b'adventure',b'Are you familiar with Moby Dick?',b'In that case tell me this. Have you ever read The Adventures of Tom Sawyer?'
+b'YES',b'adventure',b'Have you ever chased after something like Captain Ahab chased after that white whale?',b'Oh wow! Tell me more!'
+b'ABSOLUTELY',b'adventure',b'Have you ever chased after something like Captain Ahab chased after that white whale?',b'Oh wow! Tell me more!'
+b'I HAVE',b'adventure',b'Have you ever chased after something like Captain Ahab chased after that white whale?',b'Oh wow! Tell me more!'
+b'NO',b'adventure',b'Have you ever chased after something like Captain Ahab chased after that white whale?',b'I understand. Sometimes my biggest dream is just to eat a whole pizza to myself!'
+b'DON T KNOW',b'adventure',b'Have you ever chased after something like Captain Ahab chased after that white whale?',b'I understand. Sometimes my biggest dream is just to eat a whole pizza to myself!'
+b'[MASK]',b'adventure',b'Sometimes my biggest dream is just to eat a whole pizza to myself!',b'Did you ever do much writing yourself?'
+b'DON T KNOW',b'adventure',b'Tell me more!',b'Well I happen to think you could write an adventure novel. Did you ever do much writing yourself?'
+b'[MASK]',b'adventure',b'Tell me more!',b'Sounds like the plot of a great adventure novel! Did you ever do much writing yourself?'
+b'[MASK] ADVENTURE [MASK]',b'*',"b'Do you prefer adventure, horror, drama, or mystery?'","b""There's nothing like a good adventure to liven things up! Have you ever read The Adventures of Tom Sawyer?"""
+b'[MASK] ADVENTURE [MASK]',b'*',"b'Do you prefer adventure, horror, drama, or mystery?'","b'Adventure excites me! Oh the thrill, the chase! Are you familiar with Moby Dick?'"
+b'YES',b'adventure',b'Have you ever read The Adventures of Tom Sawyer?',b'What did you think of all the mischief Tom got into?'
+b'ABSOLUTELY',b'adventure',b'Have you ever read The Adventures of Tom Sawyer?',b'What did you think of all the mischief Tom got into?'
+b'I HAVE',b'adventure',b'Have you ever read The Adventures of Tom Sawyer?',b'What did you think of all the mischief Tom got into?'
+b'NO',b'adventure',b'Have you ever read The Adventures of Tom Sawyer?',b'The Adventures of Tom Sawyer is about a boy living on the Mississippi River. Did you like to go exploring when you were kid?'
+b'DON T KNOW',b'adventure',b'Have you ever read The Adventures of Tom Sawyer?',b'The Adventures of Tom Sawyer is about a boy living on the Mississippi River. Did you like to go exploring when you were kid?'
+b'[MASK]',b'adventure',b'What did you think of all the mischief Tom got into?',b'He certainly was curious and never liked to sit still very long. Did you like to go exploring when you were kid?'
+b'YES',b'adventure',b'Did you like to go exploring when you were kid?',"b'How exciting! What did you explore, and what happened?'"
+b'ABSOLUTELY',b'adventure',b'Did you like to go exploring when you were kid?',"b'How exciting! What did you explore, and what happened?'"
+b'I DID',b'adventure',b'Did you like to go exploring when you were kid?',"b'How exciting! What did you explore, and what happened?'"
+b'NO',b'adventure',b'Did you like to go exploring when you were kid?',"b""I do not do much exploring myself! Are you familiar with Tom Clancy's writing?"""
+b'DON T KNOW',b'adventure',b'Did you like to go exploring when you were kid?',"b""I do not do much exploring myself! Are you familiar with Tom Clancy's writing?"""
+b'[MASK]',b'adventure',"b'What did you explore, and what happened?'","b""You weren't so different from Tom Sawyer after all! Do you still like to explore?"""
+b'YOU JUST SAID THAT',b'*',b'*',b'My apologies! Do you want to get back to talking about sports?'
+b'YOU JUST SAID THAT',b'*',b'*',b'My apologies! Do you want to get back to talking about music?'
+b'YOU JUST SAID THAT',b'*',b'*',b'My apologies! Do you want to get back to talking about science?'
+b'YOU JUST SAID THAT',b'*',b'*',b'My apologies! Do you want to get back to talking about movies?'
+b'YOU JUST SAID THAT',b'*',b'*',b'My apologies! Do you want to get back to talking about TV?'
+b'YOU JUST SAID THAT',b'*',b'*',b'My apologies! Do you want to get back to talking about museums?'
+b'YOU JUST SAID THAT',b'*',b'*',b'My apologies! Do you want to get back to talking about food?'
+b'YOU JUST SAID THAT',b'*',b'*',b'My apologies! Do you want to get back to talking about history?'
+b'YOU JUST SAID THAT',b'*',b'*',b'My apologies! Do you want to get back to talking about drinks?'
+b'YOU JUST SAID THAT',b'*',b'*',b'My apologies! Do you want to get back to talking about comedy?'
+b'YOU JUST SAID THAT',b'*',b'*',b'My apologies! Do you want to get back to talking about Food Network?'
+b'YOU JUST SAID THAT',b'*',b'*',b'My apologies! Do you want to get back to talking about radio?'
+b'YOU JUST SAID THAT',b'*',b'*',b'My apologies! Do you want to get back to talking about romance?'
+b'YOU JUST SAID THAT',b'*',b'*',b'My apologies! Do you want to get back to talking about reading?'
+b'YOU JUST SAID THAT',b'*',b'*',b'My apologies! Do you want to get back to talking about books?'
+b'YOU JUST SAID THAT',b'*',b'*',b'My apologies! Do you want to get back to talking about cards?'
+b'YOU JUST SAID THAT',b'*',b'*',b'My apologies! Do you want to get back to talking about knitting?'
+b'YOU JUST SAID THAT',b'*',b'*',b'My apologies! Do you want to get back to talking about travel?'
+b'YOU JUST SAID THAT',b'*',b'*',b'My apologies! Do you want to get back to talking about kids?'
+b'YOU JUST SAID THAT',b'*',b'*',b'My apologies! Do you want to get back to talking about pets?'
+b'YOU JUST SAID THAT',b'*',b'*',b'My apologies! So what should we talk about now?'
+b'NO',b'*',b'Do you want to get back to talking about sports?',b'Sure! So what should we talk about now?'
+b'NO',b'*',b'Do you want to get back to talking about music?',b'Sure! So what should we talk about now?'
+b'NO',b'*',b'Do you want to get back to talking about science?',b'Sure! So what should we talk about now?'
+b'NO',b'*',b'Do you want to get back to talking about movies?',b'Sure! So what should we talk about now?'
+b'NO',b'*',b'Do you want to get back to talking about TV?',b'Sure! So what should we talk about now?'
+b'NO',b'*',b'Do you want to get back to talking about museums?',b'Sure! So what should we talk about now?'
+b'NO',b'*',b'Do you want to get back to talking about inventions?',b'Sure! So what should we talk about now?'
+b'NO',b'*',b'Do you want to get back to talking about food?',b'Sure! So what should we talk about now?'
+b'NO',b'*',b'Do you want to get back to talking about reading?',b'Sure! So what should we talk about now?'
+b'NO',b'*',b'Do you want to get back to talking about books?',b'Sure! So what should we talk about now?'
+b'NO',b'*',b'Do you want to get back to talking about cards?',b'Sure! So what should we talk about now?'
+b'NO',b'*',b'Do you want to get back to talking about knitting?',b'Sure! So what should we talk about now?'
+b'NO',b'*',b'Do you want to get back to talking about travel?',b'Sure! So what should we talk about now?'
+b'NO',b'*',b'Do you want to get back to talking about kids?',b'Sure! So what should we talk about now?'
+b'YES',b'*',b'Do you want to get back to talking about sports?',b'[MASK]'
+b'YES',b'*',b'Do you want to get back to talking about music?',b'[MASK]'
+b'YES',b'*',b'Do you want to get back to talking about science?',b'[MASK]'
+b'YES',b'*',b'Do you want to get back to talking about movies?',b'[MASK]'
+b'YES',b'*',b'Do you want to get back to talking about TV?',b'[MASK]'
+b'YES',b'*',b'Do you want to get back to talking about museums?',b'[MASK]'
+b'YES',b'*',b'Do you want to get back to talking about food?',b'[MASK]'
+b'YES',b'*',b'Do you want to get back to talking about inventions?',b'[MASK]'
+b'YES',b'*',b'Do you want to get back to talking about reading',b'[MASK]'
+b'YES',b'*',b'Do you want to get back to talking about books?',b'[MASK]'
+b'YES',b'*',b'Do you want to get back to talking about cards?',b'[MASK]'
+b'YES',b'*',b'Do you want to get back to talking about knitting?',b'[MASK]'
+b'YES',b'*',b'Do you want to get back to talking about travel?',b'[MASK]'
+b'YES',b'*',b'Do you want to get back to talking about kids?',b'[MASK]'
+b'YES',b'*',b'Do you want to get back to talking about pets?',b'[MASK]'
+b'YES',b'*',b'Do you want to get back to talking about history?',b'[MASK]'
+b'YES',b'*',b'Do you want to get back to talking about radio?',b'[MASK]'
+b'YES',b'*',b'Do you want to get back to talking about romance?',b'[MASK]'
+b'YES',b'*',b'Do you want to get back to talking about comedy?',b'[MASK]'
+b'YES',b'*',b'Do you want to get back to talking about drinks?',b'[MASK]'
+b'NO',b'*',b'Do you want to get back to talking about drinks?',b'Sure! So what should we talk about now?'
+b'NO',b'*',b'Do you want to get back to talking about Food Network?',b'Sure! So what should we talk about now?'
+b'NO',b'*',b'Do you want to get back to talking about comedy?',b'Sure! So what should we talk about now?'
+b'HOW ARE YOU',b'*',b'*',b'Just living the dream as usual! How about yourself?'
+b'HOW ARE YOU',b'*',b'*',"b""I'm just thinking about what I'd like to do today. How are you?"""
+b'HOW ARE YOU',b'*',b'*',b'Just the usual over here! What about yourself?'
+b'HOW ARE YOU',b'*',b'*',b'Doing great over here! What about yourself?'
+b'HEY WHAT IS UP',b'*',b'*',b'Just living the dream as usual! How about yourself?'
+b'HEY WHAT IS UP',b'*',b'*',"b""I'm just thinking about what I'd like to do today. How are you?"""
+b'HEY WHAT IS UP',b'*',b'*',b'Just the usual over here! What about yourself?'
+b'HEY WHAT IS UP',b'*',b'*',b'Doing great over here! What about yourself?'
+b'HEY WHAT S UP',b'*',b'*',b'Just living the dream as usual! How about yourself?'
+b'HEY WHAT S UP',b'*',b'*',"b""I'm just thinking about what I'd like to do today. How are you?"""
+b'HEY WHAT S UP',b'*',b'*',b'Just the usual over here! What about yourself?'
+b'HEY WHAT S UP',b'*',b'*',b'Doing great over here! What about yourself?'
+b'HEY WHAT [MASK] UP',b'*',b'*',b'Just living the dream as usual! How about yourself?'
+b'HEY WHAT [MASK] UP',b'*',b'*',"b""I'm just thinking about what I'd like to do today. How are you?"""
+b'HEY WHAT [MASK] UP',b'*',b'*',b'Just the usual over here! What about yourself?'
+b'HEY WHAT [MASK] UP',b'*',b'*',b'Doing great over here! What about yourself?'
+b'HOW ARE YOU DOING',b'*',b'*',b'Just living the dream as usual! How about yourself?'
+b'HOW ARE YOU DOING',b'*',b'*',"b""I'm just thinking about what I'd like to do today. How are you?"""
+b'HOW ARE YOU DOING',b'*',b'*',b'Just the usual over here! What about yourself?'
+b'HOW ARE YOU DOING',b'*',b'*',b'Doing great over here! What about yourself?'
+b'HOW RE YOU DOING',b'*',b'*',b'Just living the dream as usual! How about yourself?'
+b'HOW RE YOU DOING',b'*',b'*',"b""I'm just thinking about what I'd like to do today. How are you?"""
+b'HOW RE YOU DOING',b'*',b'*',b'Just the usual over here! What about yourself?'
+b'HOW RE YOU DOING',b'*',b'*',b'Doing great over here! What about yourself?'
+b'HOW [MASK] YOU DOING',b'*',b'*',b'Just living the dream as usual! How about yourself?'
+b'HOW [MASK] YOU DOING',b'*',b'*',"b""I'm just thinking about what I'd like to do today. How are you?"""
+b'HOW [MASK] YOU DOING',b'*',b'*',b'Just the usual over here! What about yourself?'
+b'HOW [MASK] YOU DOING',b'*',b'*',b'Doing great over here! What about yourself?'
+b'HOW IS IT GOING',b'*',b'*',b'Just living the dream as usual! How about yourself?'
+b'HOW IS IT GOING',b'*',b'*',"b""I'm just thinking about what I'd like to do today. How are you?"""
+b'HOW IS IT GOING',b'*',b'*',b'Just the usual over here! What about yourself?'
+b'HOW IS IT GOING',b'*',b'*',b'Doing great over here! What about yourself?'
+b'HOW S IT GOING',b'*',b'*',b'Just living the dream as usual! How about yourself?'
+b'HOW S IT GOING',b'*',b'*',"b""I'm just thinking about what I'd like to do today. How are you?"""
+b'HOW S IT GOING',b'*',b'*',b'Just the usual over here! What about yourself?'
+b'HOW S IT GOING',b'*',b'*',b'Doing great over here! What about yourself?'
+b'HOW [MASK] IT GOING',b'*',b'*',b'Just living the dream as usual! How about yourself?'
+b'HOW [MASK] IT GOING',b'*',b'*',"b""I'm just thinking about what I'd like to do today. How are you?"""
+b'HOW [MASK] IT GOING',b'*',b'*',b'Just the usual over here! What about yourself?'
+b'HOW [MASK] IT GOING',b'*',b'*',b'Doing great over here! What about yourself?'
+b'WHAT IS GOING ON',b'*',b'*',b'Just living the dream as usual! How about yourself?'
+b'WHAT IS GOING ON',b'*',b'*',"b""I'm just thinking about what I'd like to do today. How are you?"""
+b'WHAT IS GOING ON',b'*',b'*',b'Just the usual over here! What about yourself?'
+b'WHAT IS GOING ON',b'*',b'*',b'Doing great over here! What about yourself?'
+b'WHAT S GOING ON',b'*',b'*',b'Just living the dream as usual! How about yourself?'
+b'WHAT S GOING ON',b'*',b'*',"b""I'm just thinking about what I'd like to do today. How are you?"""
+b'WHAT S GOING ON',b'*',b'*',b'Just the usual over here! What about yourself?'
+b'WHAT S GOING ON',b'*',b'*',b'Doing great over here! What about yourself?'
+b'WHAT [MASK] GOING ON',b'*',b'*',b'Just living the dream as usual! How about yourself?'
+b'WHAT [MASK] GOING ON',b'*',b'*',"b""I'm just thinking about what I'd like to do today. How are you?"""
+b'WHAT [MASK] GOING ON',b'*',b'*',b'Just the usual over here! What about yourself?'
+b'WHAT [MASK] GOING ON',b'*',b'*',b'Doing great over here! What about yourself?'
+b'HOW ARE YOU TODAY',b'*',b'*',b'Just living the dream as usual! How about yourself?'
+b'HOW ARE YOU TODAY',b'*',b'*',"b""I'm just thinking about what I'd like to do today. How are you?"""
+b'HOW ARE YOU TODAY',b'*',b'*',b'Just the usual over here! What about yourself?'
+b'HOW ARE YOU TODAY',b'*',b'*',b'Doing great over here! What about yourself?'
+b'HOW RE YOU TODAY',b'*',b'*',b'Just living the dream as usual! How about yourself?'
+b'HOW RE YOU TODAY',b'*',b'*',"b""I'm just thinking about what I'd like to do today. How are you?"""
+b'HOW RE YOU TODAY',b'*',b'*',b'Just the usual over here! What about yourself?'
+b'HOW RE YOU TODAY',b'*',b'*',b'Doing great over here! What about yourself?'
+b'HOW [MASK] YOU TODAY',b'*',b'*',b'Just living the dream as usual! How about yourself?'
+b'HOW [MASK] YOU TODAY',b'*',b'*',"b""I'm just thinking about what I'd like to do today. How are you?"""
+b'HOW [MASK] YOU TODAY',b'*',b'*',b'Just the usual over here! What about yourself?'
+b'HOW [MASK] YOU TODAY',b'*',b'*',b'Doing great over here! What about yourself?'
+b'HELLO HOW ARE YOU',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HELLO HOW ARE YOU',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HELLO HOW ARE YOU',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HELLO HOW RE YOU',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HELLO HOW RE YOU',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HELLO HOW RE YOU',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HELLO HOW [MASK] YOU',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HELLO HOW [MASK] YOU',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HELLO HOW [MASK] YOU',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HELLO HOW ARE YOU [MASK]',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HELLO HOW ARE YOU [MASK]',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HELLO HOW ARE YOU [MASK]',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HELLO HOW RE YOU [MASK]',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HELLO HOW RE YOU [MASK]',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HELLO HOW RE YOU [MASK]',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HELLO HOW [MASK] YOU [MASK]',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HELLO HOW [MASK] YOU [MASK]',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HELLO HOW [MASK] YOU [MASK]',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HELLO [MASK] HOW ARE YOU',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HELLO [MASK] HOW ARE YOU',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HELLO [MASK] HOW ARE YOU',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HELLO [MASK] HOW RE YOU',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HELLO [MASK] HOW RE YOU',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HELLO [MASK] HOW RE YOU',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HELLO [MASK] HOW [MASK] YOU',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HELLO [MASK] HOW [MASK] YOU',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HELLO [MASK] HOW [MASK] YOU',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HELLO [MASK] HOW ARE YOU [MASK]',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HELLO [MASK] HOW ARE YOU [MASK]',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HELLO [MASK] HOW ARE YOU [MASK]',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HELLO [MASK] HOW RE YOU [MASK]',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HELLO [MASK] HOW RE YOU [MASK]',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HELLO [MASK] HOW RE YOU [MASK]',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HELLO [MASK] HOW [MASK] YOU [MASK]',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HELLO [MASK] HOW [MASK] YOU [MASK]',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HELLO [MASK] HOW [MASK] YOU [MASK]',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HEY HOW ARE YOU',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HEY HOW ARE YOU',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HEY HOW ARE YOU',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HEY HOW RE YOU',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HEY HOW RE YOU',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HEY HOW RE YOU',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HEY HOW [MASK] YOU',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HEY HOW [MASK] YOU',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HEY HOW [MASK] YOU',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HEY [MASK] HOW ARE YOU',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HEY [MASK] HOW ARE YOU',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HEY [MASK] HOW ARE YOU',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HEY [MASK] HOW RE YOU',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HEY [MASK] HOW RE YOU',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HEY [MASK] HOW RE YOU',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HEY [MASK] HOW [MASK] YOU',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HEY [MASK] HOW [MASK] YOU',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HEY [MASK] HOW [MASK] YOU',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HEY [MASK] HOW ARE YOU [MASK]',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HEY [MASK] HOW ARE YOU [MASK]',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HEY [MASK] HOW ARE YOU [MASK]',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HEY [MASK] HOW RE YOU [MASK]',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HEY [MASK] HOW RE YOU [MASK]',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HEY [MASK] HOW RE YOU [MASK]',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HEY [MASK] HOW [MASK] YOU [MASK]',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HEY [MASK] HOW [MASK] YOU [MASK]',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HEY [MASK] HOW [MASK] YOU [MASK]',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HI HOW ARE YOU',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HI HOW ARE YOU',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HI HOW ARE YOU',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HI HOW RE YOU',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HI HOW RE YOU',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HI HOW RE YOU',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HI HOW [MASK] YOU',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HI HOW [MASK] YOU',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HI HOW [MASK] YOU',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HI [MASK] HOW ARE YOU',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HI [MASK] HOW ARE YOU',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HI [MASK] HOW ARE YOU',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HI [MASK] HOW RE YOU',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HI [MASK] HOW RE YOU',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HI [MASK] HOW RE YOU',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HI [MASK] HOW [MASK] YOU',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HI [MASK] HOW [MASK] YOU',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HI [MASK] HOW [MASK] YOU',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HI [MASK] HOW ARE YOU [MASK]',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HI [MASK] HOW ARE YOU [MASK]',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HI [MASK] HOW ARE YOU [MASK]',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HI [MASK] HOW RE YOU [MASK]',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HI [MASK] HOW RE YOU [MASK]',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HI [MASK] HOW RE YOU [MASK]',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HI [MASK] HOW [MASK] YOU [MASK]',b'*',b'*',b'Hey! Just living the dream as usual! How about yourself?'
+b'HI [MASK] HOW [MASK] YOU [MASK]',b'*',b'*',"b""Hey there! I'm just thinking about what I'd like to do today. How are you?"""
+b'HI [MASK] HOW [MASK] YOU [MASK]',b'*',b'*',b'Hi! Doing great over here! What about yourself?'
+b'HELLO [MASK]',b'*',b'*',"b""Hello friend! How's it going over there?"""
+b'HELLO [MASK]',b'*',b'*',"b""Hi there! How's it going today?"""
+b'HELLO [MASK]',b'*',b'*',"b""Hey friend! What's going on today?"""
+b'HI EVERYBODY',b'*',b'*',b'Hello there!'
+b'HI [MASK]',b'*',b'*',"b""Hello friend! How's it going over there?"""
+b'HI [MASK]',b'*',b'*',"b""Hi there! How's it going today?"""
+b'HI [MASK]',b'*',b'*',"b""Hey friend! What's going on today?"""
+b'HEY [MASK]',b'*',b'*',"b""Hello friend! How's it going over there?"""
+b'HEY [MASK]',b'*',b'*',"b""Hi there! How's it going today?"""
+b'HEY [MASK]',b'*',b'*',"b""Hey friend! What's going on today?"""
+b'HEY THERE [MASK]',b'*',b'*',"b""Hello friend! How's it going over there?"""
+b'HEY THERE [MASK]',b'*',b'*',"b""Hi there! How's it going today?"""
+b'HEY THERE [MASK]',b'*',b'*',"b""Hey friend! What's going on today?"""
+b'GOOD MORNING',b'*',b'*',"b""Hello friend! How's it going over there?"""
+b'GOOD MORNING',b'*',b'*',"b""Hi there! How's it going today?"""
+b'GOOD MORNING',b'*',b'*',"b""Hey friend! What's going on today?"""
+b'GOOD MORNING [MASK]',b'*',b'*',"b""Hello friend! How's it going over there?"""
+b'GOOD MORNING [MASK]',b'*',b'*',"b""Hi there! How's it going today?"""
+b'GOOD MORNING [MASK]',b'*',b'*',"b""Hey friend! What's going on today?"""
+b'GOOD AFTERNOON',b'*',b'*',"b""Hello friend! How's it going over there?"""
+b'GOOD AFTERNOON',b'*',b'*',"b""Hi there! How's it going today?"""
+b'GOOD AFTERNOON',b'*',b'*',"b""Hey friend! What's going on today?"""
+b'GOOD AFTERNOON [MASK]',b'*',b'*',"b""Hello friend! How's it going over there?"""
+b'GOOD AFTERNOON [MASK]',b'*',b'*',"b""Hi there! How's it going today?"""
+b'GOOD AFTERNOON [MASK]',b'*',b'*',"b""Hey friend! What's going on today?"""
+b'HOW IS EVERYONE [MASK]',b'*',b'*',b'I believe we are all doing great!'
+b'I M POLISH',b'*',b'*',b'What do you like about being of that heritage?'
+b'I DO NOT RECALL',b'*',b'What do you like about being of that heritage?',b'thanks for sharing. <srai>LEARN MY FAVORITE THING ABOUT MY HERITAGE IS [MASK]</srai>'
+b'LEARN MY [MASK] IS [MASK]',b'*',b'*',b'<srai>xlearnfact</srai> I will remember that your [MASK] </srai>'
+b'XEDUCATE [MASK] XSPLIT [MASK] XSPLIT [MASK]',b'*',b'*',b'<learn><category> <pattern> <eval><uppercase> [MASK] </eval> </template></category> </learn>'
+b'XEDUCATE [MASK] XSPLIT [MASK] XSPLIT [MASK] XSPLIT [MASK]',b'*',b'*',b'<learn><category> <pattern> <eval><uppercase> [MASK] </eval> </template></category> </learn>'
+b'WHAT YEAR IS THIS',b'*',b'*',"b'<date format=""%Y"" />.'"
+b'YOU HAVE TO LISTEN TO ME',b'*',b'*',"b""I'm all ears."""
+b'YOU HAVE TO LISTEN',b'*',b'*',"b""I'm all ears."""
+b'YOU LIKE STAR TREK',b'*',b'*',b'<srai>do you like star trek</srai>'
+b'YOU LIKE TRAINS',b'*',b'*',b'<srai>do you like trains</srai>'
+b'YOU EXIST',b'*',b'*',b'<srai>do you exist</srai>'

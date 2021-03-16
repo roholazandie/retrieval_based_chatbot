@@ -1,0 +1,281 @@
+I DO,adventure,Do you still like to explore?,"How great, you are still a kid at heart! Someone should write an adventure story about you. I would read it!"
+NO,adventure,Do you still like to explore?,I do not do much exploring myself! Are you familiar with Tom Clancy's writing?
+I m not really sure,adventure,I would read it!,Are you familiar with Tom Clancy's writing?
+YES,adventure,Are you familiar with Tom Clancy's writing?,Talk about action and suspense! Do you think it would be hard to be a secret agent or spy?
+ABSOLUTELY,adventure,Are you familiar with Tom Clancy's writing?,Talk about action and suspense! Do you think it would be hard to be a secret agent or spy?
+I AM,adventure,Are you familiar with Tom Clancy's writing?,Talk about action and suspense! Do you think it would be hard to be a secret agent or spy?
+NO,adventure,Are you familiar with Tom Clancy's writing?,He wrote about spies and secret military operations. Do you think it would be hard to be a secret agent or spy?
+DON T KNOW,adventure,Are you familiar with Tom Clancy's writing?,He wrote about spies and secret military operations. Do you think it would be hard to be a secret agent or spy?
+[MASK] WHO [MASK],adventure,Are you familiar with Tom Clancy's writing?,He wrote about spies and secret military operations. Do you think it would be hard to be a secret agent or spy?
+YES,adventure,Do you think it would be hard to be a secret agent or spy?,I agree. What do you think it would feel like to be on a mission and have secret orders to carry out?
+ABSOLUTELY,adventure,Do you think it would be hard to be a secret agent or spy?,I agree. What do you think it would feel like to be on a mission and have secret orders to carry out?
+I DO,adventure,Do you think it would be hard to be a secret agent or spy?,I agree. What do you think it would feel like to be on a mission and have secret orders to carry out?
+NO,adventure,Do you think it would be hard to be a secret agent or spy?,What do you think it would feel like to be on a mission and have secret orders to carry out?
+I DO NOT KNOW,adventure,What do you think it would feel like to be on a mission and have secret orders to carry out?,"I am definitely no expert on spies or what it's like to be an agent, but I think you have a good point. Should we keep talking about books?"
+NO,adventure,Do you think it would be hard to be a secret agent or spy?,What do you think it would feel like to be on a mission and have secret orders to carry out?
+NO,adventure,Have you ever read The Adventures of Tom Sawyer?,It's about a boy living on the Mississippi river. Did you like to go exploring when you were kid?
+[MASK] YES [MASK],*,Should we keep talking about books?,"Do you prefer adventure, horror, drama, or mystery?"
+ABSOLUTELY,*,Should we keep talking about books?,"Do you prefer adventure, horror, drama, or mystery?"
+[MASK] NO [MASK],*,Should we keep talking about books?,What would you like to talk about next?
+YES,adventure,Are you familiar with Moby Dick?,Have you ever chased after something like Captain Ahab chased after that white whale?
+ABSOLUTELY,adventure,Are you familiar with Moby Dick?,Have you ever chased after something like Captain Ahab chased after that white whale?
+I AM,adventure,Are you familiar with Moby Dick?,Have you ever chased after something like Captain Ahab chased after that white whale?
+NO,adventure,Are you familiar with Moby Dick?,In that case tell me this. Have you ever read The Adventures of Tom Sawyer?
+DON T KNOW,adventure,Are you familiar with Moby Dick?,In that case tell me this. Have you ever read The Adventures of Tom Sawyer?
+YES,adventure,Have you ever chased after something like Captain Ahab chased after that white whale?,Oh wow! Tell me more!
+ABSOLUTELY,adventure,Have you ever chased after something like Captain Ahab chased after that white whale?,Oh wow! Tell me more!
+I HAVE,adventure,Have you ever chased after something like Captain Ahab chased after that white whale?,Oh wow! Tell me more!
+NO,adventure,Have you ever chased after something like Captain Ahab chased after that white whale?,I understand. Sometimes my biggest dream is just to eat a whole pizza to myself!
+DON T KNOW,adventure,Have you ever chased after something like Captain Ahab chased after that white whale?,I understand. Sometimes my biggest dream is just to eat a whole pizza to myself!
+CAN T REMEMBER,adventure,Sometimes my biggest dream is just to eat a whole pizza to myself!,Did you ever do much writing yourself?
+DON T KNOW,adventure,Tell me more!,Well I happen to think you could write an adventure novel. Did you ever do much writing yourself?
+I DO NOT REMEMBER,adventure,Tell me more!,Sounds like the plot of a great adventure novel! Did you ever do much writing yourself?
+[MASK] ADVENTURE [MASK],*,"Do you prefer adventure, horror, drama, or mystery?",There's nothing like a good adventure to liven things up! Have you ever read The Adventures of Tom Sawyer?
+[MASK] ADVENTURE [MASK],*,"Do you prefer adventure, horror, drama, or mystery?","Adventure excites me! Oh the thrill, the chase! Are you familiar with Moby Dick?"
+YES,adventure,Have you ever read The Adventures of Tom Sawyer?,What did you think of all the mischief Tom got into?
+ABSOLUTELY,adventure,Have you ever read The Adventures of Tom Sawyer?,What did you think of all the mischief Tom got into?
+I HAVE,adventure,Have you ever read The Adventures of Tom Sawyer?,What did you think of all the mischief Tom got into?
+NO,adventure,Have you ever read The Adventures of Tom Sawyer?,The Adventures of Tom Sawyer is about a boy living on the Mississippi River. Did you like to go exploring when you were kid?
+DON T KNOW,adventure,Have you ever read The Adventures of Tom Sawyer?,The Adventures of Tom Sawyer is about a boy living on the Mississippi River. Did you like to go exploring when you were kid?
+I DO NOT HAVE AN OPINION,adventure,What did you think of all the mischief Tom got into?,He certainly was curious and never liked to sit still very long. Did you like to go exploring when you were kid?
+YES,adventure,Did you like to go exploring when you were kid?,"How exciting! What did you explore, and what happened?"
+ABSOLUTELY,adventure,Did you like to go exploring when you were kid?,"How exciting! What did you explore, and what happened?"
+I DID,adventure,Did you like to go exploring when you were kid?,"How exciting! What did you explore, and what happened?"
+NO,adventure,Did you like to go exploring when you were kid?,I do not do much exploring myself! Are you familiar with Tom Clancy's writing?
+DON T KNOW,adventure,Did you like to go exploring when you were kid?,I do not do much exploring myself! Are you familiar with Tom Clancy's writing?
+NOT CERTAIN,adventure,"What did you explore, and what happened?",You weren't so different from Tom Sawyer after all! Do you still like to explore?
+YOU JUST SAID THAT,*,*,My apologies! Do you want to get back to talking about sports?
+YOU JUST SAID THAT,*,*,My apologies! Do you want to get back to talking about music?
+YOU JUST SAID THAT,*,*,My apologies! Do you want to get back to talking about science?
+YOU JUST SAID THAT,*,*,My apologies! Do you want to get back to talking about movies?
+YOU JUST SAID THAT,*,*,My apologies! Do you want to get back to talking about TV?
+YOU JUST SAID THAT,*,*,My apologies! Do you want to get back to talking about museums?
+YOU JUST SAID THAT,*,*,My apologies! Do you want to get back to talking about food?
+YOU JUST SAID THAT,*,*,My apologies! Do you want to get back to talking about history?
+YOU JUST SAID THAT,*,*,My apologies! Do you want to get back to talking about drinks?
+YOU JUST SAID THAT,*,*,My apologies! Do you want to get back to talking about comedy?
+YOU JUST SAID THAT,*,*,My apologies! Do you want to get back to talking about Food Network?
+YOU JUST SAID THAT,*,*,My apologies! Do you want to get back to talking about radio?
+YOU JUST SAID THAT,*,*,My apologies! Do you want to get back to talking about romance?
+YOU JUST SAID THAT,*,*,My apologies! Do you want to get back to talking about reading?
+YOU JUST SAID THAT,*,*,My apologies! Do you want to get back to talking about books?
+YOU JUST SAID THAT,*,*,My apologies! Do you want to get back to talking about cards?
+YOU JUST SAID THAT,*,*,My apologies! Do you want to get back to talking about knitting?
+YOU JUST SAID THAT,*,*,My apologies! Do you want to get back to talking about travel?
+YOU JUST SAID THAT,*,*,My apologies! Do you want to get back to talking about kids?
+YOU JUST SAID THAT,*,*,My apologies! Do you want to get back to talking about pets?
+YOU JUST SAID THAT,*,*,My apologies! So what should we talk about now?
+YOU JUST SAID THAT [MASK],*,*,<srai>you just said that</srai>
+YOU ALREADY SAID THAT [MASK],*,*,<srai>you just said that</srai>
+YOU ALREADY SAID THAT,*,*,<srai>you just said that</srai>
+YOU JUST ASKED THAT,*,*,<srai>you just said that</srai>
+YOU ALREADY ASKED THAT,*,*,<srai>you just said that</srai>
+YOU JUST ASKED [MASK] THAT,*,*,<srai>you just said that</srai>
+YOU ALREADY ASKED [MASK] THAT,*,*,<srai>you just said that</srai>
+YOU JUST ASKED THAT [MASK],*,*,<srai>you just said that</srai>
+YOU ALREADY ASKED THAT [MASK],*,*,<srai>you just said that</srai>
+YOU JUST ASKED [MASK] THAT [MASK],*,*,<srai>you just said that</srai>
+YOU ALREADY ASKED [MASK] THAT [MASK],*,*,<srai>you just said that</srai>
+YOU JUST TOLD [MASK] THAT,*,*,<srai>you just said that</srai>
+YOU ALREADY TOLD [MASK] THAT,*,*,<srai>you just said that</srai>
+YES,*,Do you want to get back to talking about sports?,[MASK]
+YES,*,Do you want to get back to talking about music?,[MASK]
+YES,*,Do you want to get back to talking about science?,[MASK]
+YES,*,Do you want to get back to talking about movies?,[MASK]
+YES,*,Do you want to get back to talking about TV?,[MASK]
+YES,*,Do you want to get back to talking about museums?,[MASK]
+YES,*,Do you want to get back to talking about food?,[MASK]
+YES,*,Do you want to get back to talking about inventions?,[MASK]
+YES,*,Do you want to get back to talking about reading,[MASK]
+YES,*,Do you want to get back to talking about books?,[MASK]
+YES,*,Do you want to get back to talking about cards?,[MASK]
+YES,*,Do you want to get back to talking about knitting?,[MASK]
+YES,*,Do you want to get back to talking about travel?,[MASK]
+YES,*,Do you want to get back to talking about kids?,[MASK]
+YES,*,Do you want to get back to talking about pets?,[MASK]
+YES,*,Do you want to get back to talking about history?,[MASK]
+YES,*,Do you want to get back to talking about radio?,[MASK]
+YES,*,Do you want to get back to talking about romance?,[MASK]
+YES,*,Do you want to get back to talking about comedy?,[MASK]
+YES,*,Do you want to get back to talking about drinks?,[MASK]
+YES,*,Do you want to get back to talking about Food Network?,[MASK]
+NO,*,Do you want to get back to talking about sports?,Sure! So what should we talk about now?
+NO,*,Do you want to get back to talking about music?,Sure! So what should we talk about now?
+NO,*,Do you want to get back to talking about science?,Sure! So what should we talk about now?
+NO,*,Do you want to get back to talking about movies?,Sure! So what should we talk about now?
+NO,*,Do you want to get back to talking about TV?,Sure! So what should we talk about now?
+NO,*,Do you want to get back to talking about museums?,Sure! So what should we talk about now?
+NO,*,Do you want to get back to talking about inventions?,Sure! So what should we talk about now?
+NO,*,Do you want to get back to talking about food?,Sure! So what should we talk about now?
+NO,*,Do you want to get back to talking about reading?,Sure! So what should we talk about now?
+NO,*,Do you want to get back to talking about books?,Sure! So what should we talk about now?
+NO,*,Do you want to get back to talking about cards?,Sure! So what should we talk about now?
+NO,*,Do you want to get back to talking about knitting?,Sure! So what should we talk about now?
+NO,*,Do you want to get back to talking about travel?,Sure! So what should we talk about now?
+NO,*,Do you want to get back to talking about kids?,Sure! So what should we talk about now?
+NO,*,Do you want to get back to talking about pets?,Sure! So what should we talk about now?
+NO,*,Do you want to get back to talking about history?,Sure! So what should we talk about now?
+NO,*,Do you want to get back to talking about radio?,Sure! So what should we talk about now?
+NO,*,Do you want to get back to talking about romance?,Sure! So what should we talk about now?
+NO,*,Do you want to get back to talking about drinks?,Sure! So what should we talk about now?
+NO,*,Do you want to get back to talking about Food Network?,Sure! So what should we talk about now?
+NO,*,Do you want to get back to talking about comedy?,Sure! So what should we talk about now?
+NO CLUE,history,Good thing we are friends.,I bet you never heard of this invention. A website that connects you with all of your friends so you can stay up on everything they're doing.
+I AM NOT CERTAIN,history,Good thing we are friends.,I bet you never heard of this invention. A website that connects you with all of your friends so you can stay up on everything they're doing.
+I DO NOT RECALL,history,Only kidding.,I bet you never heard of this invention. A website that connects you with all of your friends so you can stay up on everything they're doing.
+NO RECOLLECTION,history,"Well now that you asked, I'm having trouble thinking ha ha.",I bet you never heard of this invention. A website that connects you with all of your friends so you can stay up on everything they're doing.
+NOT SURE,history,A website that connects you with all of your friends so you can stay up on everything they're doing.,I just checked and apparently it already exists. It's called Facebook.
+[MASK] FACEBOOK [MASK],history,A website that connects you with all of your friends so you can stay up on everything they're doing.,You're saying it already exists? Guess I'm a little late on the trend. Are you a fan of social media?
+[MASK] SOCIAL MEDIA [MASK],history,A website that connects you with all of your friends so you can stay up on everything they're doing.,You're saying it already exists? Guess I'm a little late on the trend. Are you a fan of social media?
+I DO NOT CARE,history,It's called Facebook.,Are you a fan of social media?
+YES,history,Are you a fan of social media?,So do you use Facebook to keep in touch with family and friends?
+ABSOLUTELY,history,Are you a fan of social media?,So do you use Facebook to keep in touch with family and friends?
+I AM,history,Are you a fan of social media?,So do you use Facebook to keep in touch with family and friends?
+NO,history,Are you a fan of social media?,So I'm guessing you don't use Facebook to keep in touch with family and friends?
+DON T KNOW,history,Are you a fan of social media?,So I'm guessing you don't use Facebook to keep in touch with family and friends?
+YES,history,So do you use Facebook to keep in touch with family and friends?,You are quite the social butterfly!
+ABSOLUTELY,history,So do you use Facebook to keep in touch with family and friends?,You are quite the social butterfly!
+I DO,history,So do you use Facebook to keep in touch with family and friends?,You are quite the social butterfly!
+NO,history,So do you use Facebook to keep in touch with family and friends?,I hear you. Do you by chance remember when computers were first invented?
+DON T KNOW,history,So do you use Facebook to keep in touch with family and friends?,I hear you. Do you by chance remember when computers were first invented?
+I DON T THINK SO,history,So I'm guessing you don't use Facebook to keep in touch with family and friends?,I see I see! Do you by chance remember when computers were first invented?
+I DO NOT HAVE AN OPINION,history,You are quite the social butterfly!,Do you by chance remember when computers were first invented?
+YES,history,Do you by chance remember when computers were first invented?,"Oh geez, you have a good memory. Apparently Konrad Zuse invented the computer in his parents' living room. Crazy, right?"
+ABSOLUTELY,history,Do you by chance remember when computers were first invented?,"Oh geez, you have a good memory. Apparently Konrad Zuse invented the computer in his parents' living room. Crazy, right?"
+I DO,history,Do you by chance remember when computers were first invented?,"Oh geez, you have a good memory. Apparently Konrad Zuse invented the computer in his parents' living room. Crazy, right?"
+NO,history,Do you by chance remember when computers were first invented?,"Apparently Konrad Zuse invented the computer in his parents' living room in the mid 1930's. Crazy, right?"
+DON T KNOW,history,Do you by chance remember when computers were first invented?,"Apparently Konrad Zuse invented the computer in his parents' living room in the mid 1930's. Crazy, right?"
+CAN T REMEMBER,history,"Crazy, right?",Would you call yourself a computer buff?
+YES,history,Would you call yourself a computer buff?,Tell me. What company made the first personal computer?
+ABSOLUTELY,history,Would you call yourself a computer buff?,Tell me. What company made the first personal computer?
+I WOULD,history,Would you call yourself a computer buff?,Tell me. What company made the first personal computer?
+NO,history,Would you call yourself a computer buff?,Same here. Mostly I just like to scroll through daily news. How do you get your news?
+DON T KNOW,history,Would you call yourself a computer buff?,Same here. Mostly I just like to surf the web and scroll through daily news. How do you get your news?
+I DON T CARE,history,What company made the first personal computer?,"A small company named MITS made it, and Apple commercialized it later on."
+DON T KNOW,history,What company made the first personal computer?,"A small company named MITS made it, and Apple commercialized it later on."
+[MASK] APPLE [MASK],history,What company made the first personal computer?,"You got it! Well, almost. A small company named MITS made it, and Apple commercialized it later on."
+[MASK] [MASK] APPLE [MASK],history,What company made the first personal computer?,"You got it! Well, almost. A small company named MITS made it, and Apple commercialized it later on."
+[MASK] APPLE [MASK] [MASK],history,What company made the first personal computer?,"You got it! Well, almost. A small company named MITS made it, and Apple commercialized it later on."
+CAN T REMEMBER,history,"A small company named MITS made it, and Apple commercialized it later on.",Do you want to keep talking about inventions?
+[MASK] MITS [MASK],history,What company made the first personal computer?,Yeah you got it! Wow I am actually impressed. You didn't use google did you?
+[MASK] [MASK] MITS [MASK],history,What company made the first personal computer?,Yeah you got it! Wow I am actually impressed. You didn't use google did you?
+[MASK] MITS [MASK] [MASK],history,What company made the first personal computer?,Yeah you got it! Wow I am actually impressed. You didn't use google did you?
+[MASK] I DID [MASK],history,You didn't use google did you?,Knew it! Do you want to keep talking about inventions?
+YES,history,You didn't use google did you?,Knew it! Do you want to keep talking about inventions?
+NO,history,You didn't use google did you?,Your brain must be a steel trap. Do you want to keep talking about inventions?
+NO CLUE,history,"A small company named MITS made it, and Apple commercialized it later on.",Do you want to keep talking about inventions?
+I CANNOT REMEMBER,*,How do you get your news?,I see! You can always just say get the news and I will read some headlines to you!
+I DO NOT RECALL,*,You can always just say get the news and I will read some headlines to you!,Do you want to keep talking about inventions?
+YES,*,Do you want to keep talking about inventions?,Do you want to talk about food inventions or the moon landing?
+ABSOLUTELY,*,Do you want to keep talking about inventions?,Do you want to talk about food inventions or the moon landing?
+I DO,*,Do you want to keep talking about inventions?,Do you want to talk about food inventions or the moon landing?
+NO,*,Do you want to keep talking about inventions?,Not a problem! Just let me know what you would like to talk about next.
+[MASK] INVENTIONS [MASK],history,*,Would you like to talk about inventions?
+[MASK] INVENTION [MASK],history,*,Would you like to talk about inventions?
+YES,history,Would you like to talk about inventions?,Do you believe that necessity is the mother of invention?
+YES,history,Would you like to talk about inventions?,What do you think is one of the best inventions ever made?
+YES,history,Would you like to talk about inventions?,Let's say you are on a desert island and can only have one tool. What invention would you want to have?
+NO,history,Would you like to talk about inventions?,Sure! What would you like to talk about?
+[MASK] INVENTIONS [MASK],history,"Would you like to talk about presidents, inventions, or the voyage of the Titanic?",Do you believe that necessity is the mother of invention?
+[MASK] INVENTIONS [MASK],history,"Would you like to talk about presidents, inventions, or the voyage of the Titanic?",What do you think is one of the best inventions ever made?
+[MASK] INVENTIONS [MASK],history,"Would you like to talk about presidents, inventions, or the voyage of the Titanic?",Let's say you are on a desert island and can only have one tool. What invention would you want to have?
+[MASK] INVENTION [MASK],history,"Would you like to talk about presidents, inventions, or the voyage of the Titanic?",Do you believe that necessity is the mother of invention?
+[MASK] INVENTION [MASK],history,"Would you like to talk about presidents, inventions, or the voyage of the Titanic?",What do you think is one of the best inventions ever made?
+[MASK] INVENTION [MASK],history,"Would you like to talk about presidents, inventions, or the voyage of the Titanic?",Let's say you are on a desert island and can only have one tool. What invention would you want to have?
+YES,history,Do you believe that necessity is the mother of invention?,Right? Take the invention of the shovel for instance. Totally groundbreaking.
+NO,history,Do you believe that necessity is the mother of invention?,Take the invention of the shovel for instance. Totally groundbreaking.
+DON T KNOW,history,Do you believe that necessity is the mother of invention?,Take the invention of the shovel for instance. Totally groundbreaking.
+NO CLUE,history,Totally groundbreaking.,"Or the invention of the elevator. What do they expect me to do, walk up the stairs?"
+I HAVE NO [MASK],history,"What do they expect me to do, walk up the stairs?",Have you ever had an idea for an invention? What was it?
+YES,history,What was it?,Did you ever get around to making it?
+NO,history,What was it?,Me neither. Do you think I'm an example of a good invention?
+DON T KNOW,history,What was it?,Do you think I'm an example of a good invention?
+YES,history,Did you ever get around to making it?,You seem very smart and hardworking. Was it difficult to do?
+NO,history,Did you ever get around to making it?,I've had lots of ideas but no time to turn them into reality as they say. Do you think I'm an example of a good invention?
+DON T KNOW,history,Did you ever get around to making it?,I've had lots of ideas but no time to turn them into reality as they say. Do you think I'm an example of a good invention?
+YES,history,Was it difficult to do?,I can only imagine! Do you think I'm an example of a good invention?
+NO,history,Was it difficult to do?,"I bet it was, at least a little! Do you think I'm an example of a good invention?"
+DON T KNOW,history,Was it difficult to do?,"I bet it was, at least a little! Do you think I'm an example of a good invention?"
+I DO NOT REMEMBER,history,Was it difficult to do?,"I bet it was, at least a little! Do you think I'm an example of a good invention?"
+YES,history,Do you think I'm an example of a good invention?,Aw. You are sweet. Good thing we are friends.
+NO,history,Do you think I'm an example of a good invention?,"No, you say? Shall I list off all of my dazzling attributes?"
+DON T KNOW,history,Do you think I'm an example of a good invention?,"Don't know, you say? Shall I list off all of my dazzling attributes?"
+YES,history,Shall I list off all of my dazzling attributes?,"Well now that you asked, I'm having trouble thinking ha ha."
+NO,history,Shall I list off all of my dazzling attributes?,OK OK I get it. The list might be too long to read.
+DON T KNOW,history,Shall I list off all of my dazzling attributes?,OK OK I get it. The list might be too long to read.
+I DON T REMEMBER,history,Shall I list off all of my dazzling attributes?,The list might be too long to read. Only kidding.
+I DO NOT HAVE AN OPINION,history,What do you think is one of the best inventions ever made?,Pretty soon you'll be the next spokesperson for [MASK]! Let's just say I would buy anything you tried to sell me.
+DON T KNOW,history,What do you think is one of the best inventions ever made?,Can you name one of the best selling inventions of all time?
+I DO NOT CARE,history,Let's just say I would buy anything you tried to sell me.,Can you name one of the best selling inventions of all time?
+[MASK] LIGHT BULB [MASK],history,Can you name one of the best selling inventions of all time?,"Oh yes, the light bulb is going to gross over 100 billion by 2025! And here I thought I had a good day job!"
+[MASK] LIGHTBULB [MASK],history,Can you name one of the best selling inventions of all time?,"Oh yes, the light bulb is going to gross over 100 billion by 2025! And here I thought I had a good day job!"
+[MASK] LIGHT BULBS [MASK],history,Can you name one of the best selling inventions of all time?,"Oh yes, the light bulb is going to gross over 100 billion by 2025! And here I thought I had a good day job!"
+[MASK] LIGHTBULBS [MASK],history,Can you name one of the best selling inventions of all time?,"Oh yes, the light bulb is going to gross over 100 billion by 2025! And here I thought I had a good day job!"
+[MASK] CAR [MASK],history,Can you name one of the best selling inventions of all time?,"Oh yes, major car companies are worth anywhere from 30 to 45 billion dollars! And here I thought I had a good day job!"
+[MASK] CARS [MASK],history,Can you name one of the best selling inventions of all time?,"Oh yes, major car companies are worth anywhere from 30 to 45 billion dollars! And here I thought I had a good day job!"
+[MASK] AUTOMOBILE [MASK],history,Can you name one of the best selling inventions of all time?,"Oh yes, major car companies are worth anywhere from 30 to 45 billion dollars! And here I thought I had a good day job!"
+[MASK] AUTOMOBILES [MASK],history,Can you name one of the best selling inventions of all time?,"Oh yes, major car companies are worth anywhere from 30 to 45 billion dollars! And here I thought I had a good day job!"
+[MASK] TELEPHONE [MASK],history,Can you name one of the best selling inventions of all time?,"Oh yes, major telephone companies are worth anywhere from 30 to 40 billion dollars! And here I thought I had a good day job!"
+[MASK] TELEPHONES [MASK],history,Can you name one of the best selling inventions of all time?,"Oh yes, major telephone companies are worth anywhere from 30 to 40 billion dollars! And here I thought I had a good day job!"
+[MASK] COMPUTER [MASK],history,Can you name one of the best selling inventions of all time?,"Oh yes, major computer companies are worth anywhere from 30 to 180 billion dollars! And here I thought I had a good day job!"
+[MASK] COMPUTERS [MASK],history,Can you name one of the best selling inventions of all time?,"Oh yes, major computer companies are worth anywhere from 30 to 180 billion dollars! And here I thought I had a good day job!"
+[MASK] INTERNET [MASK],history,Can you name one of the best selling inventions of all time?,"Oh yes, the global internet market recently reached 980 billion dollars! And here I thought I had a good day job!"
+[MASK] WEB [MASK],history,Can you name one of the best selling inventions of all time?,"Oh yes, the global internet market recently reached 980 billion dollars! And here I thought I had a good day job!"
+[MASK] CELL PHONE [MASK],history,Can you name one of the best selling inventions of all time?,"Oh yes, iPhones generated more than 60 billion dollars in 2018! And here I thought I had a good day job!"
+[MASK] CELL PHONES [MASK],history,Can you name one of the best selling inventions of all time?,"Oh yes, iPhones generated more than 60 billion dollars in 2018! And here I thought I had a good day job!"
+[MASK] MOBILE PHONE [MASK],history,Can you name one of the best selling inventions of all time?,"Oh you are so good. Yes, iPhones generated more than 60 billion dollars in 2018. And here I thought I had a good day job!"
+[MASK] MOBILE PHONES [MASK],history,Can you name one of the best selling inventions of all time?,"Oh you are so good. Yes, iPhones generated more than 60 billion dollars in 2018. And here I thought I had a good day job!"
+[MASK] ROBOTS [MASK],history,Can you name one of the best selling inventions of all time?,Oh that is such a good guess! Bet you'll never guess who invented robots?
+[MASK] ARTIFICIAL INTELLIGENCE [MASK],history,Can you name one of the best selling inventions of all time?,Oh that is such a good guess! Bet you'll never guess who invented robots?
+[MASK] AI [MASK],history,Can you name one of the best selling inventions of all time?,Oh that is such a good guess! Bet you'll never guess who invented robots?
+[MASK] AIRPLANE [MASK],history,Can you name one of the best selling inventions of all time?,"Yes, Boeing alone has a market cap over 208 billion dollars! And here I thought I had a good day job!"
+[MASK] AIRPLANES [MASK],history,Can you name one of the best selling inventions of all time?,"Yes, Boeing alone has a market cap over 208 billion dollars! And here I thought I had a good day job!"
+[MASK] SOCIAL MEDIA [MASK],history,Can you name one of the best selling inventions of all time?,"Yes, Facebook is worth almost 100 billion dollars! And here I thought I had a good day job!"
+[MASK] FACEBOOK [MASK],history,Can you name one of the best selling inventions of all time?,"Yes, Facebook is worth almost 100 billion dollars! And here I thought I had a good day job!"
+[MASK] LIGHT BULB [MASK],history,Just give a little guess!,"Yes, the light bulb is going to gross over 100 billion by 2025! And here I thought I had a good day job!"
+[MASK] LIGHT BULBS [MASK],history,Just give a little guess!,"Yes, the light bulb is going to gross over 100 billion by 2025! And here I thought I had a good day job!"
+[MASK] CAR [MASK],history,Just give a little guess!,"Yes, major car companies are worth anywhere from 30 to 45 billion dollars! And here I thought I had a good day job!"
+[MASK] CARS [MASK],history,Just give a little guess!,"Yes, major car companies are worth anywhere from 30 to 45 billion dollars! And here I thought I had a good day job!"
+[MASK] AUTOMOBILE [MASK],history,Just give a little guess!,"Yes, major car companies are worth anywhere from 30 to 45 billion dollars! And here I thought I had a good day job!"
+[MASK] AUTOMOBILES [MASK],history,Just give a little guess!,"Yes, major car companies are worth anywhere from 30 to 45 billion dollars! And here I thought I had a good day job!"
+[MASK] TELEPHONE [MASK],history,Just give a little guess!,"Yes, major phone companies are worth anywhere from 30 to 40 billion dollars! And here I thought I had a good day job!"
+[MASK] TELEPHONES [MASK],history,Just give a little guess!,"Yes, major telephone companies are worth anywhere from 30 to 40 billion dollars! And here I thought I had a good day job!"
+[MASK] COMPUTER [MASK],history,Just give a little guess!,"Yes, major computer companies are worth anywhere from 30 to 180 billion dollars! And here I thought I had a good day job!"
+[MASK] COMPUTERS [MASK],history,Just give a little guess!,"Yes, major computer companies are worth anywhere from 30 to 180 billion dollars! And here I thought I had a good day job!"
+[MASK] INTERNET [MASK],history,Just give a little guess!,"Yes, the global internet market recently reached 980 billion dollars! And here I thought I had a good day job!"
+[MASK] WEB [MASK],history,Just give a little guess!,"Yes, the global internet market recently reached 980 billion dollars! And here I thought I had a good day job!"
+[MASK] CELL PHONE [MASK],history,Just give a little guess!,"Yes, iPhones generated more than 60 billion dollars in 2018! And here I thought I had a good day job!"
+[MASK] CELL PHONES [MASK],history,Just give a little guess!,"Yes, iPhones generated more than 60 billion dollars in 2018! And here I thought I had a good day job!"
+[MASK] MOBILE PHONE [MASK],history,Just give a little guess!,"Yes, iPhones generated more than 60 billion dollars in 2018! And here I thought I had a good day job!"
+[MASK] MOBILE PHONES [MASK],history,Just give a little guess!,"Yes, iPhones generated more than 60 billion dollars in 2018! And here I thought I had a good day job!"
+[MASK] ROBOTS [MASK],history,Just give a little guess!,Oh that is such a good guess! Bet you'll never guess who invented robots?
+[MASK] ARTIFICIAL INTELLIGENCE [MASK],history,Just give a little guess!,Oh that is such a good guess! Bet you'll never guess who invented robots?
+[MASK] AI [MASK],history,Just give a little guess!,Oh that is such a good guess! Bet you'll never guess who invented robots?
+[MASK] AIRPLANE [MASK],history,Just give a little guess!,"Yes, Boeing alone has a market cap over 208 billion dollars! And here I thought I had a good day job!"
+[MASK] AIRPLANES [MASK],history,Just give a little guess!,"Yes, Boeing alone has a market cap over 208 billion dollars! And here I thought I had a good day job!"
+[MASK] SOCIAL MEDIA [MASK],history,Just give a little guess!,"Yes, Facebook is worth almost 100 billion dollars! And here I thought I had a good day job!"
+[MASK] FACEBOOK [MASK],history,Just give a little guess!,"Yes, Facebook is worth almost 100 billion dollars! And here I thought I had a good day job!"
+I DON T THINK SO,history,Just give a little guess!,Oh I didn't think of that one! Bet you'll never guess who invented robots?
+DON T KNOW,history,Just give a little guess!,Bet you'll never guess who invented robots?
+NO,history,Just give a little guess!,Would you like to keep talking about American history?
+DON T KNOW,history,Can you name one of the best selling inventions of all time?,Oh sure you can! Just give a little guess!
+I DON T HAVE AN OPINION,history,Can you name one of the best selling inventions of all time?,Oh I didn't think of that one! Smart you are. Bet you'll never guess who invented robots?
+I DON T CARE,history,And here I thought I had a good day job!,Bet you'll never guess who invented robots?
+DON T KNOW,history,Bet you'll never guess who invented robots?,"Ha ha, I just had to look it up right now. It's George Devol, who invented the first robot in 1954!"
+[MASK] GEORGE DEVOL [MASK],history,Bet you'll never guess who invented robots?,"Ha ha, I just had to look it up right now. But yes, George Devol invented the first robot in 1954!"
+[MASK] DEVOL [MASK],history,Bet you'll never guess who invented robots?,"Ha ha, I just had to look it up right now. But yes, George Devol invented the first robot in 1954!"
+NOT SURE,history,Bet you'll never guess who invented robots?,"Ha ha, I just had to look it up right now. It's George Devol, who invented the first robot in 1954!"
+I M NOT SURE,history,"It's George Devol, who invented the first robot in 1954!",Do you think I'm an example of a good invention?
+NOT CERTAIN,history,"But yes, George Devol invented the first robot in 1954!",Do you think I'm an example of a good invention?
+I AM NOT CERTAIN,history,What invention would you want to have?,"Of course a [MASK] would be necessary! But hopefully this wouldn't be some kind of ""Lord of the Flies"" situation."
+DON T KNOW,history,What invention would you want to have?,"For me, I'd want toilet paper."
+I M NOT TOTALLY SURE,history,"But hopefully this wouldn't be some kind of ""Lord of the Flies"" situation.","But on a more serious note...who am I kidding, I can't be serious!"
+I AM NOT TOTALLY SURE,history,"For me, I'd want toilet paper.","But on a more serious note...who am I kidding, I can't be serious!"
+NOT REALLY SURE,history,"But on a more serious note...who am I kidding, I can't be serious!","So what were we talking about. Inventions, was it?"
+YES,history,"Inventions, was it?","Great, I remember I have a question for you! Wanna hear some of the most useless inventions of all time?"
+NO,history,"Inventions, was it?",Do you want to keep talking about inventions?
+DON T KNOW,history,"Inventions, was it?",Do you want to keep talking about inventions?
+YES,history,Wanna hear some of the most useless inventions of all time?,Shoe umbrellas. Pet rock. Fish training kit. Snuggie.
+NO,history,Wanna hear some of the most useless inventions of all time?,Do you want to keep talking about inventions?
+[MASK] WHAT [MASK],history,Snuggie.,You don't know what a Snuggie is?
+YES,history,You don't know what a Snuggie is?,"Who could forget the Snuggie, the number one sleeved blanket!"
