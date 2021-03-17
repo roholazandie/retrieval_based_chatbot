@@ -11,6 +11,7 @@ class DataReader:
         self.df = pd.read_csv(filepath)
         self.df.columns =['Pattern', 'Topic', 'That', 'Template']
         self.max = len(self.df.index)
+        self.convert_to_str()
 
     def train_test_split(self):
         # Covnert values to strings

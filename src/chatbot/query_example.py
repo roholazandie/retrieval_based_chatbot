@@ -31,7 +31,7 @@ def create_question_answer_arrs(datareader):
         raise Exception
 
 if __name__ == "__main__":
-    datareader = DataReader('./data/subset_AIML_QAdataset.csv')
+    datareader = DataReader('./data/AIML_QAdataset_newer.csv')
     print("Finished creating datareader.")
     questions, answers = create_question_answer_arrs(datareader)
     print("Finished created questions and answers.")
