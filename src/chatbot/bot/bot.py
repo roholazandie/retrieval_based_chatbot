@@ -85,10 +85,10 @@ class Bot:
 
     def _compute_indicies_softmax(self, query_embedding):
         try:
-            input_tensor = torch.matmul(query_embedding, torch.transpose(self._question_embeddings, 0, 1))
+            # input_tensor = torch.matmul(query_embedding, torch.transpose(self._question_embeddings, 0, 1))
             # # TODO: add check for if it should be on cuda or cpu
-            # question_embeddings = torch.load('models/question_embeddings.pt')
-            # input_tensor = torch.matmul(query_embedding, torch.transpose(question_embeddings, 0, 1))
+            question_embeddings = torch.load('models/question_embeddings.pt')
+            input_tensor = torch.matmul(query_embedding, torch.transpose(question_embeddings, 0, 1))
             
             canidate_response_idxs = nn.Softmax(input_tensor)
             # print("tensor went through softmax layer.")
