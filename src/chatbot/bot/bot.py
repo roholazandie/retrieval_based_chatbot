@@ -49,6 +49,7 @@ class Bot:
             print("Error getting answer query - {}".format(e))
 
     def get_top_n_answers(self, n, answer_arrs, response_indexes):
+        print("getting top {} responses.".format(n))
         best_answers = []
         for x in range(0,n):
             best_answers.append(answer_arrs[response_indexes[x]])
