@@ -50,7 +50,7 @@ class Bot:
     def get_top_n_answers(self, n, answer_arrs, response_indexes):
         best_answers = []
         for x in range(0,n):
-            best_answers.append(answer_arrs[response_indexes[x])
+            best_answers.append(answer_arrs[response_indexes[x]])
 
         return best_answers
 
