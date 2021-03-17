@@ -52,6 +52,7 @@ class Bot:
         print("getting top {} responses.".format(n))
         best_answers = []
         for x in range(0,n):
+            print(x)
             best_answers.append(answer_arrs[response_indexes[x]])
 
         return best_answers
