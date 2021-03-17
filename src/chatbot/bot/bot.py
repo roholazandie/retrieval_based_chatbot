@@ -19,13 +19,13 @@ class Bot:
             self._answer_arrs = answers
             self._question_arrs = questions
 
-            self._answer_embeddings = self._textembedder.create_sentence_embeddings(answers)
-            self._question_embeddings = self._textembedder.create_sentence_embeddings(questions)
+            # self._answer_embeddings = self._textembedder.create_sentence_embeddings(answers)
+            # self._question_embeddings = self._textembedder.create_sentence_embeddings(questions)
 
-            # answer_embeddings = self._textembedder.create_sentence_embeddings(answers)
-            # question_embeddings = self._textembedder.create_sentence_embeddings(questions)
-            # torch.save(answer_embeddings, 'models/answer_embeddings.pt')
-            # torch.save(question_embeddings, 'models/question_embeddings.pt')
+            answer_embeddings = self._textembedder.create_sentence_embeddings(answers)
+            question_embeddings = self._textembedder.create_sentence_embeddings(questions)
+            torch.save(answer_embeddings, 'models/answer_embeddings.pt')
+            torch.save(question_embeddings, 'models/question_embeddings.pt')
 
             print("Finished created embeddings.")
         except Exception as e:
@@ -60,6 +60,8 @@ class Bot:
             best_answers = answer_embeddings[best_answer_index]
         except Exception as e:
             print("Error finding embeddings - {}".format(e))
+            raise Exception
+
         return best_answers, best_answer_index
 
 

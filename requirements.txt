@@ -3,5 +3,5 @@ numpy
 pandas
 scikit-learn
 transformers
-torch==1.6
+torch
 # sentence-transformers
