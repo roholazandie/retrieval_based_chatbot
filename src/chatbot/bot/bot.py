@@ -39,7 +39,7 @@ class Bot:
             query_embedding = self.textembedder.create_sentence_embeddings(query)
             response_embeddings, response_indexes = self.find_embeddings(query_embedding, "cosine")
             print("response_embeddings: {}".format(response_embeddings))
-            print("response_indexes: {}".format(response_indexes))
+            print("response_indexes: {},  {}".format(response_indexes, type(response_indexes)))
             # TODO: print response embedding in text format to help debug
             if num_responses <= 1:
                 return self._answer_arrs[response_indexes[0]]
