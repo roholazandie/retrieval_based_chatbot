@@ -34,13 +34,26 @@ class Bot:
             print("answers input: {}".format(type(answers)))
             raise Exception
 
-    def answer_query(self, query):
+    def answer_query(self, query, num_responses=1):
         try:
             query_embedding = self.textembedder.create_sentence_embeddings(query)
             response_embeddings, response_indexes = self.find_embeddings(query_embedding, "softmax")
-            return self._answer_arrs[response_indexes[0]]
+            print("response_embeddings: {}".format(response_embeddings))
+            if numresponses <= 1:
+                return self._answer_arrs[response_indexes[0]]
+            else:
+                return self.get_top_n_answers()
+
         except Exception as e:
             print("Error getting answer query - {}".format(e))
+
+    def get_top_n_answers(self, n, answer_arrs, response_indexes):
+        best_answers = []
+        for x in range(0,n):
+            best_answers.append(answer_arrs[response_indexes[x])
+
+        return best_answers
+
 
     def find_embeddings(self, query_embedding, method="cosine"):
         # Get similarity of query vs precomputed question embeddings
@@ -70,10 +83,17 @@ class Bot:
         try:
             print("\tcomputing similarity of query...")
             
-            numerator = torch.matmul(query_embedding, torch.transpose(self._question_embeddings, 0, 1))
+            # numerator = torch.matmul(query_embedding, torch.transpose(self._question_embeddings, 0, 1))
+            # print("\tcomputed numerator...")
+            
+            # denominator = torch.matmul(query_embedding, torch.transpose(self._question_embeddings, 0, 1))
+            # print("\tcomputed denominator...")
+
+            question_embeddings = torch.load('models/question_embeddings.pt')
+            numerator = torch.matmul(query_embedding, torch.transpose(question_embeddings, 0, 1))
             print("\tcomputed numerator...")
             
-            denominator = torch.matmul(query_embedding, torch.transpose(self._question_embeddings, 0, 1))
+            denominator = torch.matmul(query_embedding, torch.transpose(question_embeddings, 0, 1))
             print("\tcomputed denominator...")
             
             denominator = torch.tanh(denominator)
