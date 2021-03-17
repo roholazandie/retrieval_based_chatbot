@@ -38,11 +38,12 @@ class Bot:
         try:
             query_embedding = self.textembedder.create_sentence_embeddings(query)
             response_embeddings, response_indexes = self.find_embeddings(query_embedding, "softmax")
-            print("response_embeddings: {}".format(response_embeddings))
+            # print("response_embeddings: {}".format(response_embeddings))
+            # TODO: print response embedding in text format to help debug
             if num_responses <= 1:
                 return self._answer_arrs[response_indexes[0]]
             else:
-                return self.get_top_n_answers(num_responses, self._answer_arrs, response_indexes[0])
+                return self.get_top_n_answers(num_responses, self._answer_arrs, response_indexes)
 
         except Exception as e:
             print("Error getting answer query - {}".format(e))
