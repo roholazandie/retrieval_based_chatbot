@@ -49,6 +49,6 @@ if __name__ == "__main__":
     print("Asking questions...")
     for query in queries:
         print("##########")
-        response = chatbot.answer_query(query, num_responses=5)
+        response = chatbot.answer_query(query, num_responses=1)
         print("User: {}".format(query))
         print("Ryan: {}".format(response))

@@ -37,7 +37,7 @@ class Bot:
     def answer_query(self, query, num_responses=1):
         try:
             query_embedding = self.textembedder.create_sentence_embeddings(query)
-            response_embeddings, response_indexes = self.find_embeddings(query_embedding, "softmax")
+            response_embeddings, response_indexes = self.find_embeddings(query_embedding, "cosine")
             print("response_embeddings: {}".format(response_embeddings))
             print("response_indexes: {}".format(response_indexes))
             # TODO: print response embedding in text format to help debug
@@ -52,7 +52,7 @@ class Bot:
     def get_top_n_answers(self, n, answer_arrs, response_indexes):
         print("getting top {} responses.".format(n))
         best_answers = []
-        for x in range(0,n-1):
+        for x in range(0,n):
             print(x)
             best_answers.append(answer_arrs[response_indexes[x]])
 
