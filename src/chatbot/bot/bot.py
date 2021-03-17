@@ -39,7 +39,7 @@ class Bot:
             query_embedding = self.textembedder.create_sentence_embeddings(query)
             response_embeddings, response_indexes = self.find_embeddings(query_embedding, "softmax")
             print("response_embeddings: {}".format(response_embeddings))
-            if numresponses <= 1:
+            if num_responses <= 1:
                 return self._answer_arrs[response_indexes[0]]
             else:
                 return self.get_top_n_answers()
