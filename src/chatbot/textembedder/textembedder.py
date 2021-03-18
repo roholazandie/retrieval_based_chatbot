@@ -31,7 +31,6 @@ class TextEmbedder:
             if torch.cuda.is_available():
                 encoded_input = encoded_input.to('cuda')
 
-            # model_output = self._compute_token_embedding(encoded_input)
             with torch.no_grad():
                 model_output = self._model(**encoded_input)
             #Perform pooling. In this case, mean pooling
