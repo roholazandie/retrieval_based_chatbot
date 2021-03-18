@@ -40,9 +40,9 @@ class Bot:
             response_embeddings, response_indexes = self.find_embeddings(query_embedding, "softmax")
             print("response_embeddings: {}".format(response_embeddings))
             print("response_indexes: {},  {}".format(response_indexes, response_indexes.shape))
-            # TODO: print response embedding in text format to help debug
+
             if num_responses <= 1:
-                return self._answer_arrs[response_indexes[0]]
+                return self._answer_arrs[response_indexes]
             else:
                 return self.get_top_n_answers(num_responses, self._answer_arrs, response_indexes)
 
