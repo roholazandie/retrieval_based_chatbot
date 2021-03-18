@@ -31,7 +31,7 @@ def create_question_answer_arrs(datareader):
         raise Exception
 
 if __name__ == "__main__":
-    datareader = DataReader('./data/AIML_QAdataset_newer.csv')
+    datareader = DataReader('./data/AIML_QAdataset_simple.csv')
     print("Finished creating datareader.")
     questions, answers = create_question_answer_arrs(datareader)
     print("Finished created questions and answers.")
@@ -45,10 +45,17 @@ if __name__ == "__main__":
     chatbot = Bot(tokenizer, model)
     chatbot.init_embeddings(questions, answers)
 
-    queries = ["What is your name?", "How are you today Ryan?", "You just said that.", "Can you tell me a joke?", "I love a good adventure book.", "What year is it?"]
-    print("Asking questions...")
-    for query in queries:
+    # queries = ["What is your name?", "How are you today Ryan?", "You just said that.", "Can you tell me a joke?", "I love a good adventure book.", "What year is it?"]
+    # print("Asking questions...")
+    # for query in queries:
+    #     print("##########")
+    #     response = chatbot.answer_query(query, num_responses=1)
+    #     print("User: {}".format(query))
+    #     print("Ryan: {}".format(response))
+
+    for i, question in questions:
         print("##########")
-        response = chatbot.answer_query(query, num_responses=1)
-        print("User: {}".format(query))
+        response = chatbot.answer_query(question, num_responses=1)
+        print("User: {}".format(question))
         print("Ryan: {}".format(response))
+        print("Expected Ryan response: {}".format(answers[i]))
