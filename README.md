@@ -37,12 +37,12 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
-- Cd into the chatbot folder.
+- Export src folder to PYTHONPATH or add below line to .bashrc
 ```
-cd src/chatbot
+export PYTHONPATH="${PYTHONPATH}:/home/jarid/retrieval_based_chatbot/src"
 ```
 
 - Run the python script.
 ```
-python query_example
+python src/chatbot/query_example.py
 ```
