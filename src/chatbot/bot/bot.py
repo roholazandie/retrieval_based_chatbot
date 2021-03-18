@@ -72,7 +72,7 @@ class Bot:
             raise Exception
 
         try:
-            best_answer_index = np.argmax(canidate_response_idxs.cpu(), axis=1)
+            best_answer_index = np.argmax(canidate_response_idxs, axis=1)
             answer_embeddings = torch.load('models/answer_embeddings.pt')
             best_answers = answer_embeddings[best_answer_index]
         except Exception as e:
