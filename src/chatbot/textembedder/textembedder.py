@@ -23,6 +23,22 @@ class TextEmbedder:
     def model(self):
         return self._model
 
+    def create_sentence_embeddings_no_batching(self, document):
+        try:
+            #Tokenize questions
+            encoded_input = self._tokenizer(document, padding=True, truncation=True, max_length=128, return_tensors='pt')
+
+            if torch.cuda.is_available():
+                encoded_input = encoded_input.to('cuda')
+
+            # model_output = self._compute_token_embedding(encoded_input)
+            with torch.no_grad():
+                model_output = self._model(**encoded_input)
+            #Perform pooling. In this case, mean pooling
+            return self._mean_pooling(model_output, encoded_input['attention_mask'])
+        except Exception as e:
+            print("Error creating sentence embeddings - {}".format(e))
+
     def create_sentence_embeddings(self, document):
         try:
             # Tokenize questions
@@ -39,26 +55,14 @@ class TextEmbedder:
                                     batch_size=100,
                                     shuffle=False, num_workers=0)
 
-
             all_pooled_embeddings = self._compute_token_embedding(dataloader)
 
             return all_pooled_embeddings
-            # print("Model output - {}".format(type(model_output)))
-            # print("Model output 1- {}".format(type(model_output[0])))
-            # print("Model output 2 - {}".format(type(model_output[1])))
-
-            # if torch.cuda.is_available():
-            #     # encoded_input = encoded_input.to('cuda')
-            #     print("Cuda available")
-            #     model_output[0] = model_output[0].to('cuda')
-            #     model_output[1] = model_output[1].to('cuda')
-
-            # Perform pooling. In this case, mean pooling
-            #return self.__mean_pooling(model_output, encoded_input['attention_mask'])
         except Exception as e:
             print("Error creating sentence embeddings - {}".format(e))
             raise Exception
 
+    """Private Methods"""
     def _compute_token_embedding(self, dataloader):
         all_pooled_embeddings = []
         with torch.no_grad():

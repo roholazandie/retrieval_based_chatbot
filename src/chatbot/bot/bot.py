@@ -14,13 +14,27 @@ class Bot:
     def textembedder(self):
         return self._textembedder
 
-    def init_embeddings(self, questions, answers):
+    def init_embeddings_no_batching(self, questions, answers):
         try:
             self._answer_arrs = answers
             self._question_arrs = questions
 
-            # self._answer_embeddings = self._textembedder.create_sentence_embeddings(answers)
-            # self._question_embeddings = self._textembedder.create_sentence_embeddings(questions)
+            answer_embeddings = self._textembedder.create_sentence_embeddings_no_batching(answers)
+            question_embeddings = self._textembedder.create_sentence_embeddings_no_batching(questions)
+            torch.save(answer_embeddings, 'models/answer_embeddings.pt')
+            torch.save(question_embeddings, 'models/question_embeddings.pt')
+
+            print("Finished created embeddings.")
+        except Exception as e:
+            print("Error initializing question and answer embeddings - {}".format(e))
+            print("questions input: {}".format(type(questions)))
+            print("answers input: {}".format(type(answers)))
+            raise Exception
+
+    def init_embeddings(self, questions, answers):
+        try:
+            self._answer_arrs = answers
+            self._question_arrs = questions
 
             answer_embeddings = self._textembedder.create_sentence_embeddings(answers)
             question_embeddings = self._textembedder.create_sentence_embeddings(questions)
@@ -34,12 +48,18 @@ class Bot:
             print("answers input: {}".format(type(answers)))
             raise Exception
 
+    def answer_query_no_batching(self, query, num_responses=1):
+        try:
+            query_embedding = self.textembedder.create_sentence_embeddings_no_batching(query)
+            response_embeddings, response_indexes = self.find_embeddings(query_embedding, "softmax")
+            return self._answer_arrs[response_indexes[0]]
+        except Exception as e:
+            print("Error getting answer query - {}".format(e))
+
     def answer_query(self, query, num_responses=1):
         try:
             query_embedding = self.textembedder.create_sentence_embeddings(query)
             response_embeddings, response_indexes = self.find_embeddings(query_embedding, "softmax")
-            # print("response_embeddings: {}".format(response_embeddings))
-            # print("response_indexes: {},  {}".format(response_indexes, response_indexes.shape))
 
             if num_responses <= 1:
                 return self._answer_arrs[response_indexes[0]]
@@ -86,12 +106,6 @@ class Bot:
     def _compute_cosine_similarity(self, query_embedding):
         try:
             print("\tcomputing similarity of query...")
-            
-            # numerator = torch.matmul(query_embedding, torch.transpose(self._question_embeddings, 0, 1))
-            # print("\tcomputed numerator...")
-            
-            # denominator = torch.matmul(query_embedding, torch.transpose(self._question_embeddings, 0, 1))
-            # print("\tcomputed denominator...")
 
             question_embeddings = torch.load('models/question_embeddings.pt')
             numerator = torch.matmul(query_embedding, torch.transpose(question_embeddings, 0, 1))
@@ -109,8 +123,7 @@ class Bot:
 
     def _compute_indicies_softmax(self, query_embedding):
         try:
-            # input_tensor = torch.matmul(query_embedding, torch.transpose(self._question_embeddings, 0, 1))
-            # # TODO: add check for if it should be on cuda or cpu
+            # TODO: add check for if it should be on cuda or cpu
             question_embeddings = torch.load('models/question_embeddings.pt')
             input_tensor = torch.matmul(query_embedding, torch.transpose(question_embeddings, 0, 1))
             
