@@ -39,7 +39,7 @@ class Bot:
             query_embedding = self.textembedder.create_sentence_embeddings(query)
             response_embeddings, response_indexes = self.find_embeddings(query_embedding, "softmax")
             # print("response_embeddings: {}".format(response_embeddings))
-            print("response_indexes: {},  {}".format(response_indexes, response_indexes.shape))
+            # print("response_indexes: {},  {}".format(response_indexes, response_indexes.shape))
 
             if num_responses <= 1:
                 return self._answer_arrs[response_indexes[0]]
@@ -71,7 +71,7 @@ class Bot:
             raise Exception
 
         try:
-            print("canidate_response_idxs: {}".format(canidate_response_idxs))
+            # print("canidate_response_idxs: {}".format(canidate_response_idxs))
             best_answer_index = np.argmax(canidate_response_idxs.cpu(), axis=1)
             answer_embeddings = torch.load('models/answer_embeddings.pt')
             best_answers = answer_embeddings[best_answer_index]
