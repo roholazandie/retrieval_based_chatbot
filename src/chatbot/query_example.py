@@ -53,7 +53,7 @@ if __name__ == "__main__":
     #     print("User: {}".format(query))
     #     print("Ryan: {}".format(response))
 
-    for i, question in questions:
+    for i, question in enumerate(questions):
         print("##########")
         response = chatbot.answer_query(question, num_responses=1)
         print("User: {}".format(question))
