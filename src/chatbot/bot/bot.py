@@ -37,9 +37,9 @@ class Bot:
     def answer_query(self, query, num_responses=1):
         try:
             query_embedding = self.textembedder.create_sentence_embeddings(query)
-            response_embeddings, response_indexes = self.find_embeddings(query_embedding, "cosine")
+            response_embeddings, response_indexes = self.find_embeddings(query_embedding, "softmax")
             print("response_embeddings: {}".format(response_embeddings))
-            print("response_indexes: {},  {}".format(response_indexes, type(response_indexes)))
+            print("response_indexes: {},  {}".format(response_indexes, response_indexes.shape))
             # TODO: print response embedding in text format to help debug
             if num_responses <= 1:
                 return self._answer_arrs[response_indexes[0]]
@@ -58,7 +58,6 @@ class Bot:
 
         return best_answers
 
-
     def find_embeddings(self, query_embedding, method="cosine"):
         # Get similarity of query vs precomputed question embeddings
         if method is "cosine":
@@ -72,6 +71,7 @@ class Bot:
             raise Exception
 
         try:
+            print("canidate_response_idxs: {}".format(canidate_response_idxs))
             best_answer_index = np.argmax(canidate_response_idxs.cpu(), axis=1)
             answer_embeddings = torch.load('models/answer_embeddings.pt')
             best_answers = answer_embeddings[best_answer_index]
