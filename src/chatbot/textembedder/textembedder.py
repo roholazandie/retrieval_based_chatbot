@@ -33,8 +33,12 @@ class TextEmbedder:
 
             with torch.no_grad():
                 model_output = self._model(**encoded_input)
+            
             #Perform pooling. In this case, mean pooling
-            return self._mean_pooling(model_output, encoded_input['attention_mask'])
+            pooled_embeddings = self._mean_pooling(model_output, encoded_input['attention_mask'])
+            print("pooled_embeddings: {}".format(pooled_embeddings.shape))
+
+            return pooled_embeddings
         except Exception as e:
             print("Error creating sentence embeddings - {}".format(e))
 
@@ -51,10 +55,11 @@ class TextEmbedder:
             dataloader = DataLoader(TensorDataset(encoded_input['input_ids'],
                                                   encoded_input['token_type_ids'],
                                                   encoded_input['attention_mask']),
-                                    batch_size=100,
+                                    batch_size=1,
                                     shuffle=False, num_workers=0)
 
             all_pooled_embeddings = self._compute_token_embedding(dataloader)
+            # print("all_pooled_embeddings: {}".format(all_pooled_embeddings.shape))
 
             return all_pooled_embeddings
         except Exception as e:
@@ -67,7 +72,10 @@ class TextEmbedder:
         with torch.no_grad():
             for i, data in tqdm(enumerate(dataloader)):
                 embedded_batch = self._model(input_ids=data[0], token_type_ids=data[1], attention_mask=data[2])
-                all_pooled_embeddings.append(embedded_batch['pooler_output'])
+                # all_pooled_embeddings.append(embedded_batch['pooler_output'])
+
+                pooled_embeddings = self._mean_pooling(embedded_batch, data[2])
+                all_pooled_embeddings.append(pooled_embeddings)
 
         all_pooled_embeddings = torch.cat(all_pooled_embeddings, dim=0)
         return all_pooled_embeddings

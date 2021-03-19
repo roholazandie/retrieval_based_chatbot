@@ -44,8 +44,9 @@ if __name__ == "__main__":
 
     chatbot = Bot(tokenizer, model)
 
-    BATCHING = False
+    BATCHING = True
     if BATCHING:
+        print("Loading data using batching.")
         chatbot.init_embeddings(questions, answers)
 
         # queries = ["What is your name?", "How are you today Ryan?", "You just said that.", "Can you tell me a joke?", "I love a good adventure book.", "What year is it?"]
@@ -64,6 +65,7 @@ if __name__ == "__main__":
             print("Expected Ryan response: {}".format(answers[i]))
 
     else:
+        print("Loading data using no batching.")
         chatbot.init_embeddings_no_batching(questions, answers)
 
         for i, question in enumerate(questions):
