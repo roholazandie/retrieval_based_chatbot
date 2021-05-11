@@ -49,20 +49,20 @@ if __name__ == "__main__":
         print("Loading data using batching.")
         chatbot.init_embeddings(questions, answers)
 
-        # queries = ["What is your name?", "How are you today Ryan?", "You just said that.", "Can you tell me a joke?", "I love a good adventure book.", "What year is it?"]
-        # print("Asking questions...")
-        # for query in queries:
-        #     print("##########")
-        #     response = chatbot.answer_query(query, num_responses=1)
-        #     print("User: {}".format(query))
-        #     print("Ryan: {}".format(response))
-
-        for i, question in enumerate(questions):
+        queries = ["What is your name?", "How are you today Ryan?", "You just said that.", "Can you tell me a joke?", "I love a good adventure book.", "What year is it?", "Who is your father?", "Where are you Ryan?"]
+        print("Asking questions...")
+        for query in queries:
             print("##########")
-            response = chatbot.answer_query(question, num_responses=1)
-            print("User: {}".format(question))
+            response = chatbot.answer_query(query, num_responses=1)
+            print("User: {}".format(query))
             print("Ryan: {}".format(response))
-            print("Expected Ryan response: {}".format(answers[i]))
+
+        # for i, question in enumerate(questions):
+        #     print("##########")
+        #     response = chatbot.answer_query(question, num_responses=1)
+        #     print("User: {}".format(question))
+        #     print("Ryan: {}".format(response))
+        #     print("Expected Ryan response: {}".format(answers[i]))
 
     else:
         print("Loading data using no batching.")
