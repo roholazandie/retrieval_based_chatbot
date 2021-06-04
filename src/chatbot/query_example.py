@@ -32,9 +32,9 @@ def create_question_answer_arrs(datareader):
 
 if __name__ == "__main__":
     datareader = DataReader('./data/AIML_QAdataset_knowledge.csv')
-    print("Finished creating datareader.")
+    # print("Finished creating datareader.")
     questions, answers = create_question_answer_arrs(datareader)
-    print("Finished created questions and answers.")
+    # print("Finished created questions and answers.")
         
     tokenizer = "sentence-transformers/bert-base-nli-mean-tokens"
     model = "sentence-transformers/bert-base-nli-mean-tokens"

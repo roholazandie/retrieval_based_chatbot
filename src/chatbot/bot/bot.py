@@ -31,10 +31,15 @@ class Bot:
             print("answers input: {}".format(type(answers)))
             raise Exception
 
-    def init_embeddings(self, questions, answers):
+    def init_embeddings(self, questions, answers, load_file=False):
         try:
             self._answer_arrs = answers
             self._question_arrs = questions
+
+            if load_file:
+                answer_embeddings = torch.load('models/answer_embeddings.pt')
+                question_embeddings = torch.load('models/question_embeddings.pt')
+                
 
             answer_embeddings = self._textembedder.create_sentence_embeddings(answers)
             question_embeddings = self._textembedder.create_sentence_embeddings(questions)

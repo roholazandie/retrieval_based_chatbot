@@ -11,9 +11,9 @@ class TextEmbedder:
     def __init__(self, tokenizer_filepath, model_filepath):
         self._tokenizer = AutoTokenizer.from_pretrained(tokenizer_filepath)
         self._model = AutoModel.from_pretrained(model_filepath)
-        if torch.cuda.is_available():
-            print("Cuda is available, putting the pretrained model on the GPU.")
-            self._model.to('cuda:0')
+        # if torch.cuda.is_available():
+        #     print("Cuda is available, putting the pretrained model on the GPU.")
+        #     self._model.to('cuda:0')
 
     @property
     def tokenizer(self):
@@ -28,8 +28,8 @@ class TextEmbedder:
             #Tokenize questions
             encoded_input = self._tokenizer(document, padding=True, truncation=True, max_length=128, return_tensors='pt')
 
-            if torch.cuda.is_available():
-                encoded_input = encoded_input.to('cuda')
+            # if torch.cuda.is_available():
+            #     encoded_input = encoded_input.to('cuda')
 
             with torch.no_grad():
                 model_output = self._model(**encoded_input)
@@ -48,9 +48,9 @@ class TextEmbedder:
             encoded_input = self._tokenizer(document, padding=True, truncation=True, max_length=128,
                                             return_tensors='pt')
 
-            if torch.cuda.is_available():
-                print("Putting encoded_input onto cuda.")
-                encoded_input = encoded_input.to('cuda:0')
+            # if torch.cuda.is_available():
+            #     print("Putting encoded_input onto cuda.")
+            #     encoded_input = encoded_input.to('cuda:0')
 
             dataloader = DataLoader(TensorDataset(encoded_input['input_ids'],
                                                   encoded_input['token_type_ids'],
